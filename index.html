@@ -1,169 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esther Rodrigues - Portfólio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-
-        header {
-            background-color: #4B0082;
-            color: #fff;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-
-        nav {
-            background-color: #fff;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #4B0082;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #8A2BE2;
-        }
-
-        section {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            color: #4B0082;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            color: #888;
-            font-size: 0.9rem;
-        }
-
-        .projects ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .projects li {
-            margin-bottom: 0.5rem;
-        }
-
-        .projects a {
-            color: #4B0082;
-            text-decoration: none;
-        }
-
-        .projects a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esther Rodrigues - Portfólio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <header>
-        <h1>Esther Rodrigues</h1>
-        <p>Designer UI/UX & Desenvolvedora Web</p>
-    </header>
+  <header>
+    <h1>Esther Rodrigues</h1>
+    <p>Designer UI/UX & Desenvolvedora Web</p>
+  </header>
 
-    <nav>
-        <a href="#sobre">Sobre Mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-        <a href="#processos">Processos</a>
-    </nav>
+  <nav>
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#processos">Processos</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#curriculo">Currículo</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-    <!-- <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou Esther Rodrigues, apaixonada por design e desenvolvimento web. Crio interfaces intuitivas e experiências envolventes, sempre buscando soluções que unem estética e funcionalidade.</p>
-        <p>Confira meu <a href="https://www.linkedin.com/in/esther-rodrigues-b2b4b41b0/" target="_blank">LinkedIn</a>.</p>
-    </section> -->
+  <img src="construcao (2).png" alt="Em construção" class="construction" />
 
-    <img 
-        src="construcao (2).png" 
-        alt="Em construção"
-        style="display:block; width:50%; max-width:320px; height:auto; margin:0 auto;"
-    />
+  <!-- ======== SOBRE MIM ======== -->
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <div class="sobre">
+      <img src="file.enc" alt="Foto de Esther Rodrigues" />
+      <div class="sobre-texto">
+        <p>Olá! Sou <strong>Esther Rodrigues</strong>, apaixonada por design e desenvolvimento web. Tenho foco em criar experiências digitais que unem estética, funcionalidade e propósito.</p>
+        <p>Minha jornada envolve UI/UX design, front-end e identidade visual — sempre buscando entregar projetos que comuniquem com clareza e emoção.</p>
+        <!-- <p>Ver mais: <a href="#curriculo">currículo detalhado</a>.</p> -->
+      </div>
+    </div>
+  </section>
 
+  <!-- ======== SEÇÃO PROJETOS ======== --> 
+<section id="projetos"> 
+    <h2>Projetos</h2> 
+    <p>Veja alguns de meus projetos — alguns finalizados, outros em constante evolução:</p> 
+    <div class="projects"> 
+        <div class="project-card"> 
+            <h3>🌙 Calendário Lunar</h3> 
+            <a href="https://calendario-lunar.vercel.app/" target="_blank">Visitar Projeto</a> 
+        </div> <div class="project-card"> 
+            <h3>🔮 Tiragem de Tarot</h3> 
+            <a href="https://tarot-jogo.vercel.app/" target="_blank">Visitar Projeto</a> 
+        </div> <div class="project-card"> 
+            <h3>🎓 Landing Page TCC</h3> 
+            <a href="https://jouresther.netlify.app/#/" target="_blank">Visitar Projeto</a> 
+        </div> 
+        <div class="project-card"> 
+            <h3>🎮 Jogo em Aula</h3> 
+            <a href="https://adorable-stardust-e9f9ff.netlify.app/" target="_blank">Visitar Projeto</a> 
+        </div> 
+    </div> 
+</section>
 
-    <!-- <section id="projetos" class="projects">
-        <h2>Projetos</h2>
-        <ul>
-            <li><a href="#">Projeto 1</a> - Descrição curta do projeto</li>
-            <li><a href="#">Projeto 2</a> - Descrição curta do projeto</li>
-            <li><a href="#">Projeto 3</a> - Descrição curta do projeto</li>
-        </ul>
-    </section>
+  <!-- ======== SEÇÃO PROCESSOS ======== --> 
+<section id="processos" class="processos"> 
+    <h2>💡 Processo de Criação</h2> 
+    <details class="processo-detalhes"> 
+        <summary>Como é o meu processo de criação</summary> 
+        <div class="conteudo"> 
+            <p> Antes de iniciar qualquer projeto, realizo uma pesquisa aprofundada sobre o tema e o cliente. Busco entender o contexto, o histórico do ramo e possíveis diferenciais que possam tornar a experiência do usuário mais autêntica e eficiente. </p> <p> Em seguida, inicio uma curadoria de referências visuais e estudo de projetos semelhantes — analisando como resolveram desafios do público e quais tendências podem ser aproveitadas. A partir disso, monto uma colagem de ideias e começo a <strong>prototipação no Figma</strong>, transformando insights em estrutura visual. </p> 
+            <p> Com o design definido, passo à <strong>escolha das ferramentas</strong> — linguagens, bibliotecas e frameworks — de acordo com as funcionalidades e compatibilidades necessárias. Esse passo garante um desenvolvimento ágil e otimizado. </p> <p> As etapas de <strong>responsividade, otimização e testes</strong> ocorrem entre o design e o desenvolvimento. Idealmente, a responsividade é planejada já no Figma, prevendo versões desktop e mobile. A otimização de desempenho surge da escolha das ferramentas certas. </p> 
+            <p> Os testes podem ocorrer no protótipo ou no site final: o primeiro oferece resultados mais fiéis, mas exige alta fidelidade; o segundo economiza tempo, porém pode demandar ajustes estruturais. </p> <p> Por fim, o <strong>trackeamento de métricas</strong> é realizado após o site estar no ar, com a integração de códigos de monitoramento e análise de desempenho. </p> 
+        </div> 
+    </details> 
+</section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: <a href="mailto:esther@email.com">esther@email.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/esther-rodrigues-b2b4b41b0/" target="_blank">https://www.linkedin.com/in/esther-rodrigues-b2b4b41b0/</a></p>
-    </section>
+  <!-- ======== CURRÍCULO ======== -->
+  <section id="curriculo">
+    <h2>📄 Currículo</h2>
 
-    <section id="processos">
-        <h2>Processos</h2>
-        <p>Adoto processos de design centrados no usuário, seguindo princípios de UX/UI e Design System, garantindo resultados consistentes e eficientes.</p>
-    </section>
--->
-    <footer>
-        <p> Contato:
-            <a href="mailto:vrodrigues.esther@gmai.com">vrodrigues.esther@gmai.com</a>
-            |
-            <a
-              href="https://www.linkedin.com/in/esther-rodrigues/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>|
-            <a
-              href="https://github.com/sth3r"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>|
-            <a
-              href="https://www.behance.net/esthervrodrigues"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Behance
-            </a>
-          </p>
-        &copy; 2025 Esther Rodrigues - Todos os direitos reservados
-    </footer> 
+    <a href="Esther Vieira Rodrigues - Currículo.pdf" download class="botao-curriculo">📄 Baixar Currículo</a>
 
+    <details>
+      <summary>🎯 Resumo Profissional</summary>
+      <p>Profissional em Sistemas para Internet com experiência em desenvolvimento Full-Stack, UI/UX e design digital. Atuação em projetos acadêmicos e profissionais envolvendo desenvolvimento web, prototipação, identidade visual, ilustração e marketing digital.</p>
+    </details>
+
+    <details>
+      <summary>🎓 Formação</summary>
+      <ul>
+        <li>Tecnólogo em Sistemas para Internet – IFSul (2020 – 2025)</li>
+        <li>Técnico em Comunicação Visual – IFSul (2015 – 2019)</li>
+        <li>Inglês – CCAA, nível Master (2013 – 2018)</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>💼 Experiência</summary>
+      <ul>
+        <li><strong>Bolsista de Iniciação Científica – IFSul (MTur/Mundi)</strong> | 2022 – 2023<br>Gerenciamento de dados de alunos de plataforma de cursos EAD.</li>
+        <li><strong>Freelancer – Design e Edição de Imagens</strong> | 2013 – 2021<br>Criação de conceitos visuais, logomarcas, retoques e design de redes sociais.</li>
+        <li><strong>Estágio em Marketing – DNA Sell</strong> | 2021<br>Criação de identidade visual e gestão de conteúdo digital.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>📚 Palestras e Visitas Técnicas</summary>
+      <p>Participação e palestras em diversos eventos acadêmicos e técnicos, incluindo SASPI, Semana do Design, TSI Talks e oficinas de design e tipografia.</p>
+    </details>
+
+    <details>
+      <summary>🛠️ Habilidades Técnicas</summary>
+      <ul>
+        <li><strong>Desenvolvimento Web:</strong> HTML, CSS, JavaScript, TypeScript, React Native, Laravel, PHP, Java</li>
+        <li><strong>Banco de Dados:</strong> SQL, MongoDB, Firestore</li>
+        <li><strong>Engenharia de Software:</strong> SDLC, metodologias ágeis</li>
+        <li><strong>Design & UX/UI:</strong> Photoshop, Illustrator, InDesign, prototipação</li>
+        <li><strong>Outros:</strong> GitHub, Produção de Conteúdo, Pacote Office</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer id="contato">
+    <p>Contato:
+      <a href="mailto:vrodrigues.esther@gmail.com">vrodrigues.esther@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/esther-rodrigues/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/sth3r" target="_blank">GitHub</a> |
+      <a href="https://www.behance.net/esthervrodrigues" target="_blank">Behance</a>
+    </p>
+    <p>&copy; 2025 Esther Rodrigues — Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
