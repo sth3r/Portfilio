@@ -5,24 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Esther Rodrigues - Portfólio</title>
   <link rel="stylesheet" href="styles.css" />
+
   <!-- Firebase Analytics (via Google tag) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XN6KE3BPNK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);}    
     gtag('js', new Date());
     gtag('config', 'G-XN6KE3BPNK');
   </script>
-
 </head>
 <body>
 
-  <header>
-    <h1>Esther Rodrigues</h1>
-    <p>Designer UI/UX & Desenvolvedora Web</p>
+  <header class="hero">
+    <h1 class="hero-title">Esther Rodrigues</h1>
+    <p class="hero-subtitle">Designer UI/UX & Desenvolvedora Web</p>
   </header>
 
-  <nav>
+  <nav class="navbar">
     <a href="#sobre">Sobre Mim</a>
     <a href="#processos">Processos</a>
     <a href="#projetos">Projetos</a>
@@ -33,62 +33,76 @@
   <img src="construcao (2).png" alt="Em construção" class="construction" />
 
   <!-- ======== SOBRE MIM ======== -->
-  <section id="sobre">
+  <section id="sobre" class="sessao">
     <h2>Sobre Mim</h2>
     <div class="sobre">
-      <img src="file.enc" alt="Foto de Esther Rodrigues" />
+      <img src="file.enc" alt="Foto de Esther Rodrigues" class="perfil" />
       <div class="sobre-texto">
         <p>Olá! Sou <strong>Esther Rodrigues</strong>, apaixonada por design e desenvolvimento web. Tenho foco em criar experiências digitais que unem estética, funcionalidade e propósito.</p>
         <p>Minha jornada envolve UI/UX design, front-end e identidade visual — sempre buscando entregar projetos que comuniquem com clareza e emoção.</p>
-        <!-- <p>Ver mais: <a href="#curriculo">currículo detalhado</a>.</p> -->
       </div>
     </div>
   </section>
 
-  <!-- ======== SEÇÃO PROJETOS ======== --> 
-<section id="projetos"> 
-    <h2>Projetos</h2> 
-    <p>Veja alguns de meus projetos — alguns finalizados, outros em constante evolução:</p> 
-    <div class="projects"> 
-        <div class="project-card"> 
-            <h3>🌙 Calendário Lunar</h3> 
-            <a href="https://calendario-lunar.vercel.app/" target="_blank">Visitar Projeto</a> 
-        </div> <div class="project-card"> 
-            <h3>🔮 Tiragem de Tarot</h3> 
-            <a href="https://tarot-jogo.vercel.app/" target="_blank">Visitar Projeto</a> 
-        </div> <div class="project-card"> 
-            <h3>🎓 Landing Page TCC</h3> 
-            <a href="https://jouresther.netlify.app/#/" target="_blank">Visitar Projeto</a> 
-        </div> 
-        <div class="project-card"> 
-            <h3>🎮 Jogo em Aula</h3> 
-            <a href="https://adorable-stardust-e9f9ff.netlify.app/" target="_blank">Visitar Projeto</a> 
-        </div> 
-    </div> 
-</section>
+  <!-- ======== SEÇÃO PROJETOS ======== -->
+  <section id="projetos" class="sessao">
+    <h2>Projetos</h2>
+    <p>Veja alguns de meus projetos — alguns finalizados, outros em constante evolução</p>
 
-  <!-- ======== SEÇÃO PROCESSOS ======== --> 
-<section id="processos" class="processos"> 
-    <h2>💡 Processo de Criação</h2> 
-    <details class="processo-detalhes"> 
-        <summary>Como é o meu processo de criação</summary> 
-        <div class="conteudo"> 
-            <p> Antes de iniciar qualquer projeto, realizo uma pesquisa aprofundada sobre o tema e o cliente. Busco entender o contexto, o histórico do ramo e possíveis diferenciais que possam tornar a experiência do usuário mais autêntica e eficiente. </p> <p> Em seguida, inicio uma curadoria de referências visuais e estudo de projetos semelhantes — analisando como resolveram desafios do público e quais tendências podem ser aproveitadas. A partir disso, monto uma colagem de ideias e começo a <strong>prototipação no Figma</strong>, transformando insights em estrutura visual. </p> 
-            <p> Com o design definido, passo à <strong>escolha das ferramentas</strong> — linguagens, bibliotecas e frameworks — de acordo com as funcionalidades e compatibilidades necessárias. Esse passo garante um desenvolvimento ágil e otimizado. </p> <p> As etapas de <strong>responsividade, otimização e testes</strong> ocorrem entre o design e o desenvolvimento. Idealmente, a responsividade é planejada já no Figma, prevendo versões desktop e mobile. A otimização de desempenho surge da escolha das ferramentas certas. </p> 
-            <p> Os testes podem ocorrer no protótipo ou no site final: o primeiro oferece resultados mais fiéis, mas exige alta fidelidade; o segundo economiza tempo, porém pode demandar ajustes estruturais. </p> <p> Por fim, o <strong>trackeamento de métricas</strong> é realizado após o site estar no ar, com a integração de códigos de monitoramento e análise de desempenho. </p> 
-        </div> 
-    </details> 
-</section>
+    <div class="projects">
+      <div class="project-card">
+        <h3>🌙 Calendário Lunar</h3>
+        <a href="https://calendario-lunar.vercel.app/" target="_blank">Visitar Projeto</a>
+      </div>
+
+      <div class="project-card">
+        <h3>🔮 Tiragem de Tarot</h3>
+        <a href="https://tarot-jogo.vercel.app/" target="_blank">Visitar Projeto</a>
+      </div>
+
+      <div class="project-card">
+        <h3>🎓 Landing Page TCC</h3>
+        <a href="https://jouresther.netlify.app/#/" target="_blank">Visitar Projeto</a>
+      </div>
+
+      <div class="project-card">
+        <h3>🎮 Jogo em Aula</h3>
+        <a href="https://adorable-stardust-e9f9ff.netlify.app/" target="_blank">Visitar Projeto</a>
+      </div>
+
+      <div class="project-card">
+        <h3>🗓️ Outro calendário</h3>
+        <span class="linguagens">React, TypeScript, Vercel</span>
+        <span class="funcionalidades">Funções: mês e dias, fases da lua, feriados, hora, mini calendários, exportar PDF (1 mês, 12 meses em paginas separadas, grade anual)</span>
+        <a href="https://outro-calendario.vercel.app/" target="_blank">Visitar Projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PROCESSOS ======== -->
+  <section id="processos" class="sessao processos">
+    <h2>💡 Processo de Criação</h2>
+    <details class="processo-detalhes">
+      <summary>Como é o meu processo de criação</summary>
+      <div class="conteudo">
+        <p>Antes de iniciar qualquer projeto, realizo uma pesquisa aprofundada sobre o tema e o cliente. Busco entender o contexto, o histórico do ramo e possíveis diferenciais que possam tornar a experiência do usuário mais autêntica e eficiente.</p>
+        <p>Em seguida, inicio uma curadoria de referências visuais e estudo de projetos semelhantes — analisando como resolveram desafios do público e quais tendências podem ser aproveitadas. A partir disso, monto uma colagem de ideias e começo a <strong>prototipação no Figma</strong>.</p>
+        <p>Com o design definido, passo à <strong>escolha das ferramentas</strong> — linguagens, bibliotecas e frameworks — conforme as funcionalidades necessárias.</p>
+        <p>As etapas de <strong>responsividade, otimização e testes</strong> ocorrem entre o design e o desenvolvimento.</p>
+        <p>O <strong>trackeamento de métricas</strong> é realizado após o site estar no ar, com integração de códigos de análise.</p>
+      </div>
+    </details>
+  </section>
 
   <!-- ======== CURRÍCULO ======== -->
-  <section id="curriculo">
+  <section id="curriculo" class="sessao">
     <h2>📄 Currículo</h2>
 
     <a href="Esther Vieira Rodrigues - Currículo.pdf" download class="botao-curriculo">📄 Baixar Currículo</a>
 
     <details>
       <summary>🎯 Resumo Profissional</summary>
-      <p>Profissional em Sistemas para Internet com experiência em desenvolvimento Full-Stack, UI/UX e design digital. Atuação em projetos acadêmicos e profissionais envolvendo desenvolvimento web, prototipação, identidade visual, ilustração e marketing digital.</p>
+      <p>Profissional em Sistemas para Internet com experiência em desenvolvimento Full-Stack, UI/UX e design digital.</p>
     </details>
 
     <details>
@@ -103,31 +117,29 @@
     <details>
       <summary>💼 Experiência</summary>
       <ul>
-        <li><strong>Bolsista de Iniciação Científica – IFSul (MTur/Mundi)</strong> | 2022 – 2023<br>Gerenciamento de dados de alunos de plataforma de cursos EAD.</li>
-        <li><strong>Freelancer – Design e Edição de Imagens</strong> | 2013 – 2021<br>Criação de conceitos visuais, logomarcas, retoques e design de redes sociais.</li>
-        <li><strong>Estágio em Marketing – DNA Sell</strong> | 2021<br>Criação de identidade visual e gestão de conteúdo digital.</li>
+        <li><strong>Bolsista de Iniciação Científica – IFSul (MTur/Mundi)</strong> | 2022 – 2023</li>
+        <li><strong>Freelancer – Design e Edição de Imagens</strong> | 2013 – 2021</li>
+        <li><strong>Estágio em Marketing – DNA Sell</strong> | 2021</li>
       </ul>
     </details>
 
     <details>
       <summary>📚 Palestras e Visitas Técnicas</summary>
-      <p>Participação e palestras em diversos eventos acadêmicos e técnicos, incluindo SASPI, Semana do Design, TSI Talks e oficinas de design e tipografia.</p>
+      <p>Participação em eventos acadêmicos e técnicos como SASPI, Semana do Design e TSI Talks.</p>
     </details>
 
     <details>
       <summary>🛠️ Habilidades Técnicas</summary>
       <ul>
-        <li><strong>Desenvolvimento Web:</strong> HTML, CSS, JavaScript, TypeScript, React Native, Laravel, PHP, Java</li>
-        <li><strong>Banco de Dados:</strong> SQL, MongoDB, Firestore</li>
-        <li><strong>Engenharia de Software:</strong> SDLC, metodologias ágeis</li>
-        <li><strong>Design & UX/UI:</strong> Photoshop, Illustrator, InDesign, prototipação</li>
-        <li><strong>Outros:</strong> GitHub, Produção de Conteúdo, Pacote Office</li>
+        <li><strong>Web:</strong> HTML, CSS, JavaScript, TypeScript, React Native, Laravel, PHP, Java</li>
+        <li><strong>Banco:</strong> SQL, MongoDB, Firestore</li>
+        <li><strong>Design:</strong> Photoshop, Illustrator, InDesign</li>
       </ul>
     </details>
   </section>
 
   <!-- ======== FOOTER ======== -->
-  <footer id="contato">
+  <footer id="contato" class="footer">
     <p>Contato:
       <a href="mailto:vrodrigues.esther@gmail.com">vrodrigues.esther@gmail.com</a> |
       <a href="https://www.linkedin.com/in/esther-rodrigues/" target="_blank">LinkedIn</a> |
@@ -136,5 +148,6 @@
     </p>
     <p>&copy; 2025 Esther Rodrigues — Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>

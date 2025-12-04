@@ -227,3 +227,31 @@
       .sobre { flex-direction: column; text-align: center; }
       .botao-curriculo { margin: 1rem auto 0; }
     }
+
+    .linguagens{
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .funcionalidades{
+      display: block;
+      margin-top: 0.3rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    ptoject-card span {
+      margin-bottom: 0.3rem;
+      color: var(--roxo-claro);
+      align-items: flex-start;
+    }
+    .project-card span {
+  display: block;
+  padding: 4px 6px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(4px);
+  text-align: left; /* personalizável */
+}
