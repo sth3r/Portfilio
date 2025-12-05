@@ -255,3 +255,16 @@
   backdrop-filter: blur(4px);
   text-align: left; /* personalizável */
 }
+
+@font-face {
+  font-family: 'pixel';
+  src: url('Tiny5-Regular.ttf') format('truetype');
+}
+
+.a{
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--roxo-escuro);
+  font-family: pixel, sans-serif;
+  font-size: 2rem;
+}
