@@ -1,26 +1,40 @@
-import iconBrasil from '../assets/icones/Ativo 7icones.png';
-import me from '../assets/me.png';
+import iconBrasil from "../assets/icones/Ativo 7icones.png";
+import me from "../assets/me.png";
 
-// IMPORTANDO SVGs COMO COMPONENTES
 import {
   EmailIcon,
   LinkedinIcon,
   InstagramIcon,
   GithubIcon,
-  BehanceIcon
-} from '../assets/icones/icones';
+  BehanceIcon,
+} from "../assets/icones/icones";
+
+import { useLanguage } from "../context/LanguageContext";
+import { texts } from "../content/texts";
 
 export default function Header() {
+  const { language } = useLanguage();
+  const h = texts[language].header;
+
   return (
     <div className="container-rodape">
       <div className="textoeilustracao">
         <div className="portfolio-title">
-          <span className="linha">Portfólio</span>
+          {h.mode === "split" ? (
+            <>
+              <span className="linha">{h.line1}</span>
 
-          <div className="linha-grupo">
-            <span className="linha2">DA</span>
-            <span className="linha3">Esther</span>
-          </div>
+              <div className="linha-grupo">
+                <span className="linha2">{h.prefix}</span>
+                <span className="linha3">{h.name}</span>
+              </div>
+            </>
+          ) : (
+            <>
+              <span className="linha">{h.line1}</span>
+              <span className="linha3">{h.name}</span>
+            </>
+          )}
         </div>
 
         <img src={me} alt="ilustração" className="construction" />

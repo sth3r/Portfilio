@@ -1,15 +1,26 @@
-import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import { LanguageProvider } from "./context/LanguageContext";
+import Header from "./components/Header";
+import HeroSection from "./components/hero";
+import Footer from "./components/Footer";
+// import LanguageSwitcher from "./components/LanguageSwitcher";
+import Navbar from "./components/Navbar";
+import ProjectsSection from "./components/ProjectsSection";
+import ResumeSection from "./components/ResumeSection";
+import ProcessSection from "./components/ProcessSection";
+import ConstructionScreen from "./components/ConstructionScreen";
 
-function App() {
-
+export default function App() {
   return (
-    <>
-    <Header/>
-    <Footer/>
-    </>
-  )
+    <LanguageProvider>
+       <ConstructionScreen /> {/* ← primeira tela */}
+      <Navbar />
+      {/* <LanguageSwitcher /> */}
+      <Header />
+      <HeroSection />
+      <ResumeSection />
+      <ProjectsSection />
+      <ProcessSection />
+      <Footer />
+    </LanguageProvider>
+  );
 }
-
-export default App
