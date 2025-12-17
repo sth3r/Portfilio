@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import constructionImg from "../assets/construcao.png";
 
 export default function ConstructionScreen() {

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { resumeTexts } from "../content/resumeTexts";
 
