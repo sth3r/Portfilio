@@ -744,3 +744,167 @@ hr {
     margin-right: 60px;
   }
 }
+
+
+/* ================== GLOBAL RESPONSIVE ================== */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 4rem 5rem;
+    padding-top: 8rem;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .scalloped-box {
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+  }
+
+  .hero-text .intro,
+  .hero-text .highlight {
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 2rem;
+    padding-top: 6rem;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .scalloped-box {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.8rem, 5vw, 2.2rem);
+  }
+
+  .hero-text .intro {
+    font-size: 1rem;
+  }
+
+  .hero-text .highlight {
+    font-size: 0.9rem;
+  }
+
+  .textoeilustracao {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .linha {
+    font-size: 4rem;
+  }
+
+  .linha2 {
+    font-size: 2.5rem;
+  }
+
+  .linha3 {
+    font-size: 5rem;
+  }
+
+  .construction {
+    max-width: 200px;
+  }
+
+  .iconesrodape {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .sessao {
+    padding: 3rem 1rem;
+  }
+
+  .sessao h2 {
+    font-size: 2rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+    padding-right: 20px;
+  }
+
+  .timeline-title-column {
+    display: none;
+  }
+
+  .timeline-content {
+    margin-right: 20px;
+  }
+
+  .timeline-year {
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: clamp(1.5rem, 6vw, 1.8rem);
+  }
+
+  .hero-text .intro,
+  .hero-text .highlight {
+    font-size: 0.9rem;
+  }
+
+  .linha {
+    font-size: 3rem;
+  }
+
+  .linha2 {
+    font-size: 2rem;
+  }
+
+  .linha3 {
+    font-size: 4rem;
+  }
+
+  .construction {
+    max-width: 150px;
+  }
+
+  .projects {
+    gap: 1rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .botao-curriculo {
+    padding: 0.5rem 1rem;
+  }
+}
