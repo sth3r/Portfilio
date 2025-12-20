@@ -1,0 +1,17 @@
+/* Resume and timeline styles */
+.resume-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; font-family: poppins, sans-serif; }
+.resume-section { width: 100%; }
+.timeline { position: relative; padding-right: 60px; }
+.timeline::after { content: ""; position: absolute; top: 0; right: 20px; width: 2px; height: 100%; background: #ccc; }
+.timeline-item { position: relative; padding: 1rem 0; }
+.timeline-year { position: absolute; right: 40px; font-weight: 500; color: #666; white-space: nowrap; }
+.timeline-content { margin-right: 100px; }
+.timeline-content strong { font-weight: 700; display: block; margin-bottom: 0.3rem; }
+.timeline-content .subtitle { font-weight: 500; color: #555; }
+.timeline-content p { margin: 0.3rem 0 0 0; line-height: 1.5; color: #333; }
+
+@media (max-width: 768px) {
+  .timeline { grid-template-columns: 1fr; padding-right: 20px; }
+  .timeline-year { right: 20px; }
+  .timeline-content { margin-right: 60px; }
+}

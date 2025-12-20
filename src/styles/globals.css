@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global variables and base styles */
+:root {
+  --roxo-escuro: #31255e;
+  --roxo-claro: #6654d1;
+  --branco: #fff;
+  --cinza-fundo: #f7f7f7;
+  --cinza-texto: #333;
+  --transicao: all 0.3s ease;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  color: var(--cinza-texto);
+  background: linear-gradient(135deg, #f8f5ff, #f7f7f7);
+  scroll-behavior: smooth;
+}
+
+a { color: inherit; text-decoration: none; }
+
+@font-face { font-family: 'pixel'; src: url('/src/assets/Jacquard12-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'poppins'; src: url('/src/assets/poppins.regular.ttf') format('truetype'); }
+@font-face { font-family: 'poppinsgrossa'; src: url('/src/assets/poppins.bold.ttf') format('truetype'); }
+@font-face { font-family: 'poppinsfina'; src: url('/src/assets/poppins.extralight.ttf') format('truetype'); }
+
+/* keep index.css for legacy rules removed; components import their css */

@@ -1,6 +1,7 @@
 import { useScrollReveal } from "./useScrollReveal";
 import { heroContent } from "../content/heroContent";
 import { useLanguage } from "../context/LanguageContext";
+import "./Hero.css";
 
 export default function HeroSection() {
   const { ref, visible } = useScrollReveal<HTMLDivElement>();

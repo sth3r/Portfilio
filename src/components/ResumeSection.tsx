@@ -1,6 +1,7 @@
 // import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { resumeTexts } from "../content/resumeTexts";
+import "./Resume.css";
 
 export default function Resume() {
   const { language } = useLanguage();

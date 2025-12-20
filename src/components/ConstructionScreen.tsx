@@ -1,23 +1,20 @@
 // import React from "react";
 import constructionImg from "../assets/construcao.png";
+import "./ConstructionScreen.css";
 
 export default function ConstructionScreen() {
   return (
     <div
-       style={{
-        width: "70vw",
-        minHeight: "70vh", // ocupa toda a altura da tela
+      className="construction-screen"
+      style={{
         backgroundImage: `url(${constructionImg})`,
-        backgroundSize: "contain", // ajusta imagem para caber na tela
+        backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center", // centraliza a imagem
-        display: "flex",
-        justifyContent: "center", // centraliza horizontal
-        alignItems: "center",     // centraliza vertical
+        backgroundPosition: "center",
       }}
     >
       {/* Opcional: um texto sobre a construção */}
-      <h1 style={{ color: "#292020ff", fontSize: "2rem" }}>Site em construção</h1>
+      <h1>Site em construção</h1>
     </div>
   );
 }

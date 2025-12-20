@@ -1,5 +1,6 @@
 import { useLanguage } from "../context/LanguageContext";
 import { texts } from "../content/texts";
+import "./Footer.css";
 
 export default function Footer() {
   const { language } = useLanguage();

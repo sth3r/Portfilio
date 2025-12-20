@@ -1,0 +1,9 @@
+/* Minimal styles for ConstructionScreen */
+.construction-screen {
+  width: 70vw;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.construction-screen h1 { color: #292020ff; font-size: 2rem; }

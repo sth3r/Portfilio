@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { LanguageProvider } from "./context/LanguageContext";
-import "./index.css"; // ou main.css / global.css
+import "./styles/globals.css";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

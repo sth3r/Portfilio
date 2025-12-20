@@ -1,10 +1,13 @@
+import { useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "../context/LanguageContext";
 import { texts } from "../content/texts";
+import "./Navbar.css";
 
 export default function Navbar() {
   const { language } = useLanguage();
   const t = texts[language];
+  const [open, setOpen] = useState(false);
 
   return (
     <header className="navbar">
@@ -12,7 +15,7 @@ export default function Navbar() {
       <div className="navbar-spacer" />
 
       {/* CENTER — menu */}
-      <nav className="navbar-pill">
+      <nav className={`navbar-pill ${open ? "open" : ""}`} onClick={() => setOpen(false)}>
         <a href="#about" className="nav-item">
           {t.nav.about}
         </a>
@@ -27,8 +30,23 @@ export default function Navbar() {
           {t.nav.processo}
         </a>
       </nav>
-      {/* RIGHT — language */}
-      <LanguageSwitcher />
+
+      <div className="right-controls">
+        {/* Language switcher stays outside the collapsible menu */}
+        <LanguageSwitcher />
+
+        {/* Hamburger — visible on small screens */}
+        <button
+          className={`hamburger ${open ? "is-active" : ""}`}
+          aria-label="Toggle menu"
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+        >
+          <span className="bar" />
+          <span className="bar" />
+          <span className="bar" />
+        </button>
+      </div>
     </header>
   );
 }

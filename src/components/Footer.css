@@ -1,0 +1,11 @@
+/* Component styles for Footer */
+footer.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+footer.footer a { color: var(--roxo-escuro); font-weight: 500; margin: 0 0.3rem; transition: color 0.3s; }
+footer.footer a:hover { color: var(--roxo-claro); }

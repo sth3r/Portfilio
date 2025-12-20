@@ -1,5 +1,6 @@
 import iconBrasil from "../assets/icones/Ativo 7icones.png";
 import me from "../assets/me.png";
+import "./Header.css";
 
 import {
   EmailIcon,
