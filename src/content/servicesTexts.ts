@@ -1,18 +1,18 @@
 // import type { Language } from "../context/LanguageContext";
 
-type ServiceItem = {
+export type ServiceItem = {
   title: string;
   description: string;
-  features: string[];
+  details: string[];
 };
 
-type ServicesTexts = {
+export type ServicesTexts = {
   sectionTitle: string;
-  intro: string;
+  intro?: string;
   items: ServiceItem[];
 };
 
-export const servicesTexts = {
+export const servicesTexts: Record<string, ServicesTexts> = {
   pt: {
     sectionTitle: "Serviços",
     items: [
@@ -51,3 +51,4 @@ export const servicesTexts = {
     ],
   },
 };
+

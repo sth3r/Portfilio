@@ -20,7 +20,7 @@ export default function App() {
       <Header />
       <HeroSection />
       <SkillsSection/>
-      {/* <ServicesSection/> */}
+      <ServicesSection/>
       <ResumeSection />
       <ProjectsSection />
       <ProcessSection />
