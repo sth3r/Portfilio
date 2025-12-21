@@ -3,126 +3,155 @@
 ================================ */
 
 .services-section {
-  margin-top: 6rem;
-}
-
-/* Wrapper */
-.services-accordion {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 3rem;
 }
 
-/* Card */
-.service-card {
-  border: 1px solid #eee;
-  border-radius: 16px;
-  padding: 1.25rem 1.5rem;
-  background: #fff;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+/* ---------- Header ---------- */
+
+.services-header {
+  max-width: 720px;
 }
 
-.service-card:hover {
-  border-color: #e6e6e6;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
-}
-
-/* Header (clickable) */
-.service-header {
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-
-  text-align: left;
-}
-
-/* Title */
-.service-title {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #111;
-}
-
-/* Icon */
-.service-icon {
-  font-size: 1.4rem;
-  color: #e97f02;
-  line-height: 1;
-  transition: transform 0.25s ease;
-}
-
-/* Content (accordion body) */
-.service-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.3s ease;
-  opacity: 0;
-}
-
-/* Open state */
-.service-card.open .service-content {
-  max-height: 500px;
-  opacity: 1;
-  margin-top: 1rem;
-}
-
-/* Rotate icon slightly for polish */
-.service-card.open .service-icon {
-  transform: rotate(180deg);
-}
-
-/* Description */
-.service-description {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #444;
+.services-header h2 {
   margin-bottom: 0.75rem;
 }
 
-/* List */
-.service-list {
-  padding-left: 1.1rem;
-  margin: 0;
+.services-intro {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.85;
 }
 
-.service-list li {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 0.4rem;
+/* ---------- Grid ---------- */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
+
+/* ---------- Card ---------- */
+
+.service-card {
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: relative;
+  overflow: hidden;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: #d6d6d6;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Card Content ---------- */
+
+.service-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+/* ---------- Hover "Ver detalhes" ---------- */
+
+.service-link {
+  margin-top: auto;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e97f02;
+
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover .service-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Scroll animation ---------- */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.fade-up:nth-child(1) { animation-delay: 0.05s; }
+.fade-up:nth-child(2) { animation-delay: 0.1s; }
+.fade-up:nth-child(3) { animation-delay: 0.15s; }
+.fade-up:nth-child(4) { animation-delay: 0.2s; }
+
+/* Keyframes */
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- CTA ---------- */
+
+.services-cta {
+  margin-top: 1rem;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 480px) {
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .services-intro {
+    font-size: 0.95rem;
+  }
+}
+
 
 /* ===============================
-   MOBILE
+   CTA CARD
 ================================ */
+.service-cta-card .service-description {
+  opacity: 0.85;
+}
 
-@media (max-width: 768px) {
-  .services-section {
-    margin-top: 4rem;
-  }
+.service-cta-card .service-link {
+  opacity: 1;
+  color: #e97f02;
+}
 
-  .service-card {
-    padding: 1.1rem 1.2rem;
-  }
+/* CTA CARD – alinhado ao visual */
+.service-cta-card {
+background: linear-gradient(135deg, #fafafa, #ffffff);
+  border: 1px dashed #e0e0e0;
+  color: #111;
+  text-decoration: none;
+  position: relative;
+}
 
-  .service-title {
-    font-size: 0.9rem;
-  }
-
-  .service-description {
-    font-size: 0.9rem;
-  }
-
-  .service-list li {
-    font-size: 0.85rem;
-  }
+/* Hover elegante */
+.service-cta-card:hover {
+  border-color: #e97f02;
+  background: #fff;
 }

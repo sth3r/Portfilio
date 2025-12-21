@@ -19,18 +19,20 @@ export default function Navbar() {
         <a href="#about" className="nav-item">
           {t.nav.about}
         </a>
-        <a href="#curriculo" className="nav-item">
-          {t.nav.curriculo}
+        <a href="#services" className="nav-item">
+          {t.nav.services}
         </a>
         <a href="#habilidades" className="nav-item">
           {t.nav.skills}
         </a>
-
         <a href="#projects" className="nav-item">
           {t.nav.projects}
         </a>
         <a href="#processo" className="nav-item">
           {t.nav.processo}
+        </a>
+        <a href="#curriculo" className="nav-item">
+          {t.nav.curriculo}
         </a>
       </nav>
 

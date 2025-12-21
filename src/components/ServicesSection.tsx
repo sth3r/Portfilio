@@ -1,46 +1,39 @@
-import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { servicesTexts } from "../content/servicesTexts";
-import type { ServicesTexts, ServiceItem } from "../content/servicesTexts";
 import "../styles/components/Services.css";
 
 export default function ServicesSection() {
   const { language } = useLanguage();
-  const services: ServicesTexts = servicesTexts[language] ?? servicesTexts.pt;
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  function toggle(index: number) {
-    setOpenIndex(openIndex === index ? null : index);
-  }
+  const content = servicesTexts[language];
 
   return (
-    <section className="sessao services-section" id="servicos">
-      <h2>{services.sectionTitle}</h2>
+    <section className="sessao services-section" id="services">
+      <header className="services-header">
+        <h2>{content.sectionTitle}</h2>
+        <p className="services-intro">{content.sectionIntro}</p>
+      </header>
 
-      <div className="services-accordion">
-        {services.items.map((service: ServiceItem, idx: number) => {
-          const isOpen = openIndex === idx;
+      <div className="services-grid">
+  {content.services.map((service, index) => (
+    <article key={index} className="service-card fade-up">
+      <h3 className="service-title">{service.title}</h3>
+      <p className="service-description">{service.description}</p>
 
-          return (
-            <div key={idx} className={`service-card ${isOpen ? "open" : ""}`}>
-              <button className="service-header" onClick={() => toggle(idx)} aria-expanded={isOpen}>
-                <span className="service-title">{service.title}</span>
-                <span className="service-icon">{isOpen ? "–" : "+"}</span>
-              </button>
+      <span className="service-link">
+        {content.viewMore}
+      </span>
+    </article>
+  ))}
 
-              <div className="service-content">
-                <p className="service-description">{service.description}</p>
+  {/* CTA Card */}
+  <a href="/servicos" className="service-card service-cta-card fade-up">
+    <h3>{content.ctaTitle}</h3>
+    <p>{content.ctaDescription}</p>
+    <span className="service-link">{content.cta}</span>
+  </a>
+</div>
 
-                <ul className="service-list">
-                  {service.details.map((item: string, i: number) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      
     </section>
   );
 }
