@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "../context/LanguageContext";
 import { texts } from "../content/texts";
@@ -16,24 +17,24 @@ export default function Navbar() {
 
       {/* CENTER — menu */}
       <nav className={`navbar-pill ${open ? "open" : ""}`} onClick={() => setOpen(false)}>
-        <a href="#about" className="nav-item">
+        <Link to={"/#about"} className="nav-item">
           {t.nav.about}
-        </a>
-        <a href="#services" className="nav-item">
+        </Link>
+        <Link to={"/servicos#services"} className="nav-item">
           {t.nav.services}
-        </a>
-        <a href="#habilidades" className="nav-item">
+        </Link>
+        <Link to={"/#habilidades"} className="nav-item">
           {t.nav.skills}
-        </a>
-        <a href="#projects" className="nav-item">
+        </Link>
+        <Link to={"/#projects"} className="nav-item">
           {t.nav.projects}
-        </a>
-        <a href="#processo" className="nav-item">
+        </Link>
+        <Link to={"/#processo"} className="nav-item">
           {t.nav.processo}
-        </a>
-        <a href="#curriculo" className="nav-item">
+        </Link>
+        <Link to={"/#curriculo"} className="nav-item">
           {t.nav.curriculo}
-        </a>
+        </Link>
       </nav>
 
       <div className="right-controls">

@@ -1,118 +1,118 @@
-// import type { Language } from "../context/LanguageContext";
-
-export type ServiceItem = {
-  title: string;
-  description: string;
-  details: string[];
-};
-
-export type ServicesTexts = {
-  sectionTitle: string;
-  intro?: string;
-  items: ServiceItem[];
-  viewMore: string;
-  ctaTitle: string;
-  ctadescription: string;
-  cta: string;
-};
-
 export const servicesTexts = {
   pt: {
-    sectionTitle: "Serviços",
+    sectionTitle: "O que eu faço",
     sectionIntro:
-      "Soluções visuais e digitais que unem design, tecnologia e estratégia — do conceito à entrega final.",
+      "Confira abaixo os principais serviços que ofereço, combinando design, desenvolvimento e soluções digitais completas.",
     cta: "Ver todos os serviços",
     services: [
       {
-        title: "Branding & Design Visual",
+        title: "Design Gráfico & Branding",
         description:
-          "Criação de identidades visuais completas para marcas e projetos autorais, incluindo logotipos, sistemas visuais, materiais gráficos e aplicações consistentes."
+          "Identidade visual, criação de logos, paletas, tipografias, materiais institucionais, capas, planners, embalagens e etiquetas."
       },
       {
         title: "UI/UX & Desenvolvimento Web",
         description:
-          "Design e desenvolvimento de interfaces modernas e sites responsivos, atuando em front-end e back-end, com foco em usabilidade, performance e clareza."
+          "Prototipação, interfaces responsivas, sites modernos (React, Next.js), landing pages, portfólios e ajustes de design."
       },
       {
-        title: "Arquitetura Web & Segurança",
+        title: "Arte Digital & Ilustração",
         description:
-          "Estruturação de aplicações web organizadas e confiáveis, com atenção à segurança, bancos de dados, controle de acesso e boas práticas de infraestrutura."
+          "Ilustrações personalizadas, pôsteres digitais, iconografia, artes para produtos físicos ou digitais."
       },
       {
-        title: "Arte Digital, Conteúdo & Produtos",
+        title: "Conteúdo Digital & Social Media",
         description:
-          "Criação de arte digital, ilustrações e conteúdo visual para mídias digitais e produtos físicos, do conceito à preparação para produção."
-      }
+          "Criação de posts, templates, edição de imagens, visual strategy, kits de branding digital e anúncios."
+      },
+      {
+        title: "Produtos Físicos Personalizados",
+        description:
+          "Criação de estampas, design para camisetas, ecobags, papelaria e finalização para impressão."
+      },
+      {
+        title: "Soluções Técnicas & Segurança",
+        description:
+          "Front-end, back-end, bancos de dados, segurança e gerenciamento de redes, VPN, criptografia, IDS/IPS, InfluxDB."
+      },
     ],
-    viewMore: "Ver detalhes",
-    ctaTitle: "Todos os serviços",
-    ctaDescription:
-      "Veja a lista completa de serviços, processos, prazos e formas de contratação.",
   },
 
   en: {
-    sectionTitle: "Services",
+    sectionTitle: "What I Do",
     sectionIntro:
-      "Visual and digital solutions that combine design, technology and strategy — from concept to final delivery.",
-    cta: "View all services",
+      "Check out the main services I provide, combining design, development, and complete digital solutions.",
+    cta: "See all services",
     services: [
       {
-        title: "Branding & Visual Design",
+        title: "Graphic Design & Branding",
         description:
-          "Complete visual identities for brands and creative projects, including logos, visual systems and consistent brand assets."
+          "Visual identity, logos, color palettes, typography, institutional materials, book covers, planners, packaging and labels."
       },
       {
         title: "UI/UX & Web Development",
         description:
-          "Design and development of modern, responsive websites, working across front-end and back-end with a focus on usability and performance."
+          "Prototyping, responsive interfaces, modern websites (React, Next.js), landing pages, portfolios and design adjustments."
       },
       {
-        title: "Web Architecture & Security",
+        title: "Digital Art & Illustration",
         description:
-          "Structured and reliable web applications with attention to security, databases, access control and infrastructure best practices."
+          "Custom illustrations, digital posters, iconography, art for physical or digital products."
       },
       {
-        title: "Digital Art, Content & Products",
+        title: "Digital Content & Social Media",
         description:
-          "Digital artwork, illustrations and visual content for online platforms and physical products, from concept to production-ready files."
-      }
+          "Posts, templates, image editing, visual strategy, digital branding kits and ad materials."
+      },
+      {
+        title: "Personalized Physical Products",
+        description:
+          "Print design, t-shirt/ecobag designs, stationery and print-ready files."
+      },
+      {
+        title: "Technical Solutions & Security",
+        description:
+          "Front-end, back-end, databases, network security, VPN, encryption, IDS/IPS, InfluxDB."
+      },
     ],
-    viewMore: "View details",
-    ctaTitle: "All services",
-    ctaDescription:
-      "Explore the full list of services, processes, timelines and pricing models.",
   },
 
   es: {
-    sectionTitle: "Servicios",
+    sectionTitle: "Lo que hago",
     sectionIntro:
-      "Soluciones visuales y digitales que combinan diseño, tecnología y estrategia — del concepto a la entrega final.",
+      "Descubre los principales servicios que ofrezco, combinando diseño, desarrollo y soluciones digitales completas.",
     cta: "Ver todos los servicios",
     services: [
       {
-        title: "Branding y Diseño Visual",
+        title: "Diseño Gráfico & Branding",
         description:
-          "Identidades visuales completas para marcas y proyectos creativos, incluyendo logotipos, sistemas visuales y aplicaciones coherentes."
+          "Identidad visual, creación de logos, paletas, tipografías, materiales institucionales, portadas, planners, packaging y etiquetas."
       },
       {
-        title: "UI/UX y Desarrollo Web",
+        title: "UI/UX & Desarrollo Web",
         description:
-          "Diseño y desarrollo de sitios web modernos y responsivos, trabajando en front-end y back-end con foco en usabilidad y rendimiento."
+          "Prototipado, interfaces responsivas, sitios modernos (React, Next.js), landing pages, portafolios y ajustes de diseño."
       },
       {
-        title: "Arquitectura Web y Seguridad",
+        title: "Arte Digital & Ilustración",
         description:
-          "Estructuración de aplicaciones web confiables, con atención a seguridad, bases de datos, control de accesos y buenas prácticas."
+          "Ilustraciones personalizadas, posters digitales, iconografía, artes para productos físicos o digitales."
       },
       {
-        title: "Arte Digital, Contenido y Productos",
+        title: "Contenido Digital & Social Media",
         description:
-          "Creación de arte digital, ilustraciones y contenido visual para plataformas digitales y productos físicos."
-      }
+          "Creación de posts, templates, edición de imágenes, estrategia visual, kits de branding digital y anuncios."
+      },
+      {
+        title: "Productos Físicos Personalizados",
+        description:
+          "Diseño de estampas, camisetas, ecobags, papelería y preparación de archivos para impresión."
+      },
+      {
+        title: "Soluciones Técnicas & Seguridad",
+        description:
+          "Front-end, back-end, bases de datos, seguridad y gestión de redes, VPN, encriptación, IDS/IPS, InfluxDB."
+      },
     ],
-    viewMore: "Ver detalles",
-    ctaTitle: "Todos los servicios",
-    ctaDescription:
-      "Consulta la lista completa de servicios, procesos y condiciones.",
-  }
+  },
 };

@@ -1,0 +1,157 @@
+/* ===============================
+   SERVICES SECTION
+================================ */
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ---------- Header ---------- */
+
+.services-header {
+  max-width: 720px;
+}
+
+.services-header h2 {
+  margin-bottom: 0.75rem;
+}
+
+.services-intro {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* ---------- Grid ---------- */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ---------- Card ---------- */
+
+.service-card {
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: relative;
+  overflow: hidden;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: #d6d6d6;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Card Content ---------- */
+
+.service-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+/* ---------- Hover "Ver detalhes" ---------- */
+
+.service-link {
+  margin-top: auto;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e97f02;
+
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover .service-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Scroll animation ---------- */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.fade-up:nth-child(1) { animation-delay: 0.05s; }
+.fade-up:nth-child(2) { animation-delay: 0.1s; }
+.fade-up:nth-child(3) { animation-delay: 0.15s; }
+.fade-up:nth-child(4) { animation-delay: 0.2s; }
+
+/* Keyframes */
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- CTA ---------- */
+
+.services-cta {
+  margin-top: 1rem;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 480px) {
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .services-intro {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ===============================
+   CTA CARD
+================================ */
+.service-cta-card .service-description {
+  opacity: 0.85;
+}
+
+.service-cta-card .service-link {
+  opacity: 1;
+  color: #e97f02;
+}
+
+/* CTA CARD – alinhado ao visual */
+.service-cta-card {
+background: linear-gradient(135deg, #fafafa, #ffffff);
+  border: 1px dashed #e0e0e0;
+  color: #111;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Hover elegante */
+.service-cta-card:hover {
+  border-color: #e97f02;
+  background: #fff;
+}

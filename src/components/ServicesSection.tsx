@@ -1,6 +1,7 @@
 import { useLanguage } from "../context/LanguageContext";
-import { servicesTexts } from "../content/servicesTexts";
-import "../styles/components/Services.css";
+import { servicesTexts } from "../content/servicesPreviewTexts";
+import "../styles/components/ServicesPreview.css";
+import { Link } from "react-router-dom";
 
 export default function ServicesSection() {
   const { language } = useLanguage();
@@ -26,11 +27,11 @@ export default function ServicesSection() {
   ))}
 
   {/* CTA Card */}
-  <a href="/servicos" className="service-card service-cta-card fade-up">
+  <Link to="/servicos" className="service-card service-cta-card fade-up">
     <h3>{content.ctaTitle}</h3>
     <p>{content.ctaDescription}</p>
     <span className="service-link">{content.cta}</span>
-  </a>
+  </Link>
 </div>
 
       
