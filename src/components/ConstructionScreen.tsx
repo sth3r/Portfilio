@@ -1,6 +1,6 @@
 // import React from "react";
 import constructionImg from "../assets/construcao.png";
-import "./ConstructionScreen.css";
+import "../styles/components/ConstructionScreen.css";
 
 export default function ConstructionScreen() {
   return (

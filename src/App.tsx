@@ -8,6 +8,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import ResumeSection from "./components/ResumeSection";
 import ProcessSection from "./components/ProcessSection";
 import SkillsSection from "./components/SkillsSection";
+import ServicesSection from "./components/ServicesSection";
 // import ConstructionScreen from "./components/ConstructionScreen";
 
 export default function App() {
@@ -18,8 +19,9 @@ export default function App() {
       {/* <LanguageSwitcher /> */}
       <Header />
       <HeroSection />
-      <ResumeSection />
       <SkillsSection/>
+      {/* <ServicesSection/> */}
+      <ResumeSection />
       <ProjectsSection />
       <ProcessSection />
       <Footer />

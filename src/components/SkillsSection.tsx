@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { skillsTexts } from "../content/skillsTexts";
-import "./Skills.css";
+import "../styles/components/Skills.css";
 
 export default function SkillsSection() {
   const { language } = useLanguage();

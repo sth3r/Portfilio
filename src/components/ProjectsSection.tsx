@@ -1,6 +1,6 @@
 import { useLanguage } from "../context/LanguageContext";
 import { projectsTexts } from "../content/projectsTexts";
-import "./Projects.css";
+import "../styles/components/Projects.css";
 
 export default function ProjectsSection() {
   const { language } = useLanguage();

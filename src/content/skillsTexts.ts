@@ -1,5 +1,4 @@
-import type { Language } from "../context/LanguageContext";
-
+ 
 export type SkillItem = {
   title: string;
   description: string;

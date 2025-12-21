@@ -2,7 +2,7 @@ import { useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "../context/LanguageContext";
 import { texts } from "../content/texts";
-import "./Navbar.css";
+import "../styles/components/Navbar.css";
 
 export default function Navbar() {
   const { language } = useLanguage();
