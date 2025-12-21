@@ -43,13 +43,49 @@
 .right-controls { display: flex; align-items: center; gap: 0.6rem; justify-self: end; }
 
 /* hamburger button */
-.hamburger { display: none; border: 0; background: transparent; padding: 6px; cursor: pointer; border-radius: 8px; }
-.hamburger .bar { display: block; width: 20px; height: 2px; background: currentColor; margin: 3px 0; transition: transform 0.2s ease, opacity 0.2s ease; }
-.hamburger.is-active .bar:nth-child(1) { transform: translateY(5px) rotate(45deg); }
-.hamburger.is-active .bar:nth-child(2) { opacity: 0; }
-.hamburger.is-active .bar:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
-.hamburger { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; border: 0; background: transparent; padding: 6px; cursor: pointer; border-radius: 8px; }
-.hamburger .bar { display: block; width: 20px; height: 2px; background: currentColor; margin: 3px 0; transition: transform 0.2s ease, opacity 0.2s ease; }
+.hamburger {
+  display: none;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  transform-origin: center;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+/* estado normal */
+.hamburger .bar:nth-child(1) {
+  transform: translate(-50%, -8px);
+}
+
+.hamburger .bar:nth-child(2) {
+  transform: translate(-50%, -50%);
+}
+
+.hamburger .bar:nth-child(3) {
+  transform: translate(-50%, 6px);
+}
+.hamburger.is-active .bar:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active .bar:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 
 .language-switch button {
   font-size: 0.75rem;
