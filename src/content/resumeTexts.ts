@@ -56,7 +56,7 @@ export const resumeTexts: Record<Language, ResumeTexts> = {
               "Contributed to research-oriented digital solutions, assisting with system logic, interface structure, and data organization."
           },
           {
-            title: "Freelance Designer & Front-End Developer",
+            title: "Freelance Designer",
             period: "2013 – 2021",
             description:
               "Delivered UI design, visual identity, and front-end solutions for independent clients, focusing on usability, clarity, and responsive layouts."
@@ -142,7 +142,7 @@ export const resumeTexts: Record<Language, ResumeTexts> = {
               "Contribuição em soluções digitais de pesquisa, auxiliando na lógica do sistema, estrutura de interfaces e organização de dados."
           },
           {
-            title: "Freelancer — Designer & Desenvolvedora Front-End",
+            title: "Freelancer — Design",
             period: "2013 – 2021",
             description:
               "Entrega de design de interface, identidade visual e soluções front-end para clientes independentes, com foco em usabilidade, clareza e layouts responsivos."
@@ -228,7 +228,7 @@ export const resumeTexts: Record<Language, ResumeTexts> = {
               "Contribuyó en soluciones digitales de investigación, asistiendo en la lógica del sistema, estructura de interfaces y organización de datos."
           },
           {
-            title: "Freelance — Diseñadora y Desarrolladora Front-End",
+            title: "Freelance — Diseño",
             period: "2013 – 2021",
             description:
               "Entrega de diseño de interfaz, identidad visual y soluciones front-end para clientes independientes, con enfoque en usabilidad, claridad y diseños responsivos."

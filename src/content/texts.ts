@@ -24,6 +24,7 @@ type NavTexts = {
   about: string;
   projects: string;
   curriculo: string;
+  skills: string;
   processo: string;
 };
 
@@ -40,6 +41,7 @@ export const texts: Record<Language, AppTexts> = {
       about: "Quem sou eu",
       projects: "Projetos",
       curriculo: "Currículo",
+      skills: "Habilidades",
       processo: "Processo criativo",
     },
     header: {
@@ -68,6 +70,7 @@ export const texts: Record<Language, AppTexts> = {
       about: "About me",
       projects: "Projects",
       curriculo: "Resume",
+      skills: "Skills",
       processo: "Creative Process",
     },
     header: {
@@ -95,6 +98,7 @@ export const texts: Record<Language, AppTexts> = {
       about: "Sobre mí",
       projects: "Proyectos",
       curriculo: "Currículum",
+      skills: "Habilidades",
       processo: "Proceso creativo",
     },
     header: {

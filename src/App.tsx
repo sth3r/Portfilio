@@ -7,17 +7,19 @@ import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/ProjectsSection";
 import ResumeSection from "./components/ResumeSection";
 import ProcessSection from "./components/ProcessSection";
-import ConstructionScreen from "./components/ConstructionScreen";
+import SkillsSection from "./components/SkillsSection";
+// import ConstructionScreen from "./components/ConstructionScreen";
 
 export default function App() {
   return (
     <LanguageProvider>
-       <ConstructionScreen /> {/* ← primeira tela */}
+       {/* <ConstructionScreen /> ← primeira tela */}
       <Navbar />
       {/* <LanguageSwitcher /> */}
       <Header />
       <HeroSection />
       <ResumeSection />
+      <SkillsSection/>
       <ProjectsSection />
       <ProcessSection />
       <Footer />

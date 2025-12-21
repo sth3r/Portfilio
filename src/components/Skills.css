@@ -1,0 +1,124 @@
+/* ===============================
+   SKILLS – ACCORDION
+================================ */
+
+.skills-section {
+  margin-top: 6rem;
+}
+
+/* Wrapper */
+.skills-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Accordion item */
+.skill-accordion-item {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+/* Title button */
+.skill-accordion-title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #111;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+/* Chevron */
+.skill-accordion-title::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+  color: #e97f02;
+  transition: transform 0.25s ease;
+}
+
+/* Open state icon */
+.skill-accordion-item.open .skill-accordion-title::after {
+  content: "–";
+}
+
+/* ===============================
+   ACCORDION CONTENT (ANIMATION)
+================================ */
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+
+  margin-top: 0.75rem;
+  padding-bottom: 0.5rem;
+
+  /* Hidden state */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-4px);
+
+  transition:
+    max-height 0.45s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Open state */
+.skill-accordion-item.open .skill-items {
+  max-height: 600px; /* safe height */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================
+   SKILL TAGS
+================================ */
+
+.skill-tag {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #f4f4f4;
+  color: #333;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.skill-tag:hover {
+  background: #ececec;
+  transform: translateY(-1px);
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+  .skills-section {
+    margin-top: 4rem;
+  }
+
+  .skill-accordion-title {
+    font-size: 0.95rem;
+  }
+
+  .skill-tag {
+    font-size: 0.8rem;
+  }
+}

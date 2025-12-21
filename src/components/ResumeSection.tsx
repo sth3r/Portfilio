@@ -9,10 +9,10 @@ export default function Resume() {
 
   return (
     <section id="curriculo" className="sessao resume">
-      {/* <h2>{resume.pageTitle}</h2>
-      <a href={resume.downloadLink} download className="botao-curriculo">
+      <h2>{resume.pageTitle}</h2>
+      {/* <a href={resume.downloadLink} download className="botao-curriculo">
         {resume.download}
-      </a> */}
+      </a>  */}
 
       <div className="resume-container">
         {resume.sections.map((section, sIdx) => (
@@ -20,7 +20,7 @@ export default function Resume() {
             <div className="timeline">
               {/* Título da seção em coluna separada */}
               <div className="timeline-title-column">
-                <h3>{section.title}</h3>
+                <strong>{section.title}</strong>
               </div>
 
               <div className="timeline-items-column">
