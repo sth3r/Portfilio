@@ -8,11 +8,22 @@ import ResumeSection from "../components/ResumeSection";
 import SkillsSection from "../components/SkillsSection";
 import ServicesSection from "../components/ServicesSection";
 import ProcessPreview from "../components/ProcessPreview";
-import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 // import ConstructionScreen from "./components/ConstructionScreen";
 
 export default function Home() {
-  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 50);
+    }
+  }, [location]);
 
   return (
     <>
@@ -22,25 +33,7 @@ export default function Home() {
       {/* 1️⃣ Posicionamento claro */}
       <HeroSection />
 
-      {/* Botão que usa DOM para rolar até a seção de serviços */}
-      <div style={{ textAlign: "center", margin: "2rem 0" }}>
-        <button
-          onClick={() => {
-            // navegar para a página de serviços usando react-router-dom
-            try {
-              if (navigate) navigate("/servicos");
-            } catch (e) {
-              // fallback: localização direta
-              window.location.href = "/servicos";
-            }
-          }}
-          aria-label="Ver serviços"
-          style={{ cursor: "pointer" }}
-        >
-          Ver serviços
-        </button>
-      </div>
-
+     
       {/* 2️⃣ O que você faz (valor imediato) */}
       <div id="services">
         <ServicesSection />

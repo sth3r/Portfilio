@@ -15,26 +15,25 @@ export default function ServicesSection() {
       </header>
 
       <div className="services-grid">
-  {content.services.map((service, index) => (
-    <article key={index} className="service-card fade-up">
-      <h3 className="service-title">{service.title}</h3>
-      <p className="service-description">{service.description}</p>
+        {content.services.map((service, index) => (
+          <article key={index} className="service-card fade-up">
+            <h3 className="service-title">{service.title}</h3>
+            <p className="service-description">{service.description}</p>
 
-      <span className="service-link">
+            {/* 🔽 agora é um botão/link */}
+            <Link to="/servicos" className="service-link">
+              {content.viewMore}
+            </Link>
+          </article>
+        ))}
+
+        {/* CTA Card */}
+       <Link to="/servicos" className="btn primary service-card-btn">
         {content.viewMore}
-      </span>
-    </article>
-  ))}
+        </Link>
 
-  {/* CTA Card */}
-  <Link to="/servicos" className="service-card service-cta-card fade-up">
-    <h3>{content.ctaTitle}</h3>
-    <p>{content.ctaDescription}</p>
-    <span className="service-link">{content.cta}</span>
-  </Link>
-</div>
 
-      
+      </div>
     </section>
   );
 }

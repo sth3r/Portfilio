@@ -17,22 +17,22 @@ export default function Navbar() {
 
       {/* CENTER — menu */}
       <nav className={`navbar-pill ${open ? "open" : ""}`} onClick={() => setOpen(false)}>
-        <Link to={"/#about"} className="nav-item">
+        <Link to={{ pathname: "/", hash: "#about" }} className="nav-item">
           {t.nav.about}
         </Link>
-        <Link to={"/servicos#services"} className="nav-item">
+        <Link to={{ pathname: "/", hash: "#services" }} className="nav-item">
           {t.nav.services}
         </Link>
-        <Link to={"/#habilidades"} className="nav-item">
+        <Link to={{ pathname: "/", hash: "#habilidades" }} className="nav-item">
           {t.nav.skills}
         </Link>
-        <Link to={"/#projects"} className="nav-item">
+        <Link to={{ pathname: "/", hash: "#projects" }} className="nav-item">
           {t.nav.projects}
         </Link>
-        <Link to={"/#processo"} className="nav-item">
+        <Link to={{ pathname: "/", hash: "#processo" }} className="nav-item">
           {t.nav.processo}
         </Link>
-        <Link to={"/#curriculo"} className="nav-item">
+        <Link to={{ pathname: "/", hash: "#curriculo" }} className="nav-item">
           {t.nav.curriculo}
         </Link>
       </nav>
