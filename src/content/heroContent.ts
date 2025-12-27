@@ -14,9 +14,9 @@ export const heroContent = {
   en: {
     title: "Hi! I'm Esther Rodrigues",
     intro:
-      "Soy una profesional híbrida de tecnología y diseño, con formación en Sistemas para Internet y Diseño Gráfico.",
+      "I am a hybrid technology and design professional, with degrees in Internet Systems and Graphic Design.",
     highlight:
-      "Trabajo en el desarrollo de interfaces y sistemas digitales, integrando front-end, back-end, UI/UX e identidad visual para crear soluciones coherentes y bien estructuradas.",
+      "I work in the development of digital interfaces and systems, integrating front-end, back-end, UI/UX and visual identity to create consistent and well-structured solutions.",
     projects: "What I do",
     contact: "Download resume",
   },
