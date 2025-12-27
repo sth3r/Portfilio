@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
 import ResumeSection from "../components/ResumeSection";
 import SkillsSection from "../components/SkillsSection";
-import ServicesSection from "../components/ServicesSection";
+import ServicesSection from "../components/ServicesSectionPreview";
 import ProcessPreview from "../components/ProcessPreview";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";

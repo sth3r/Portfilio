@@ -1,39 +1,45 @@
-import { useLanguage } from "../context/LanguageContext";
+import { motion } from "framer-motion";
+import { services } from "../content/services.data";
+import { useLanguage, Language } from "../context/LanguageContext";
 import { servicesTexts } from "../content/servicesPreviewTexts";
-import "../styles/components/ServicesPreview.css";
-import { Link } from "react-router-dom";
+import ServiceCard from "./ServiceCard";
+import ServiceModal from "./ServiceModal";
+import { useState } from "react";
 
 export default function ServicesSection() {
   const { language } = useLanguage();
-  const content = servicesTexts[language];
+  const [open, setOpen] = useState(false);
+
+  const t = servicesTexts[language as Language];
 
   return (
-    <section className="sessao services-section" id="services">
+    <section className="services-section">
       <header className="services-header">
-        <h2>{content.sectionTitle}</h2>
-        <p className="services-intro">{content.sectionIntro}</p>
+        <h2>{t.sectionTitle}</h2>
+        <p>{t.sectionIntro}</p>
       </header>
 
       <div className="services-grid">
-        {content.services.map((service, index) => (
-          <article key={index} className="service-card fade-up">
-            <h3 className="service-title">{service.title}</h3>
-            <p className="service-description">{service.description}</p>
-
-            {/* 🔽 agora é um botão/link */}
-            <Link to="/servicos" className="service-link">
-              {content.viewMore}
-            </Link>
-          </article>
+        {services.map((service, index) => (
+          <motion.div
+            key={service.slug}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+            viewport={{ once: true }}
+          >
+            <ServiceCard service={service} lang={language} />
+          </motion.div>
         ))}
-
-        {/* CTA Card */}
-       <Link to="/servicos" className="btn primary service-card-btn">
-        {content.viewMore}
-        </Link>
-
-
       </div>
+
+      <div className="services-cta">
+        <button onClick={() => setOpen(true)} className="cta-button">
+          {t.cta}
+        </button>
+      </div>
+
+      {open && <ServiceModal onClose={() => setOpen(false)} />}
     </section>
   );
 }

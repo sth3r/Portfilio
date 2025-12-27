@@ -1,118 +1,240 @@
-export const servicesTexts = {
+// content/services.ts
+
+export type ServiceGroup = {
+  category: string;
+  items: string[];
+};
+
+export type ServicesContent = {
+  title: string;
+  description: string;
+  cta: string;
+  groups: ServiceGroup[];
+};
+
+export const servicesContent: Record<"pt" | "en" | "es", ServicesContent> = {
+  /* =========================
+     🇧🇷 PORTUGUÊS
+  ========================= */
   pt: {
-    sectionTitle: "O que eu faço",
-    sectionIntro:
-      "Confira abaixo os principais serviços que ofereço, combinando design, desenvolvimento e soluções digitais completas.",
-    cta: "Ver todos os serviços",
-    services: [
+    title: "Serviços",
+    description:
+      "Soluções digitais completas que unem tecnologia, design e estratégia. Atuo do conceito à implementação, criando experiências funcionais, escaláveis e visualmente consistentes para marcas, produtos e projetos acadêmicos.",
+    cta: "Solicitar orçamento",
+    groups: [
       {
-        title: "Design Gráfico & Branding",
-        description:
-          "Identidade visual, criação de logos, paletas, tipografias, materiais institucionais, capas, planners, embalagens e etiquetas."
+        category: "Desenvolvimento Web & Sistemas",
+        items: [
+          "Sites institucionais e landing pages",
+          "Aplicações web modernas e responsivas",
+          "Desenvolvimento Full-Stack",
+          "Aplicativos mobile (React Native)",
+          "Integração com APIs e serviços externos",
+          "Integração e modelagem de bancos de dados",
+          "Manutenção, refatoração e evolução de sistemas",
+          "Implementação de boas práticas de segurança"
+        ]
       },
       {
-        title: "UI/UX & Desenvolvimento Web",
-        description:
-          "Prototipação, interfaces responsivas, sites modernos (React, Next.js), landing pages, portfólios e ajustes de design."
+        category: "UI/UX & Design de Interfaces",
+        items: [
+          "Design de interfaces (UI)",
+          "Experiência do usuário (UX)",
+          "Prototipação de alta fidelidade",
+          "Wireframes e fluxos de navegação",
+          "Redesign de interfaces existentes",
+          "Análise e melhoria de usabilidade"
+        ]
       },
       {
-        title: "Arte Digital & Ilustração",
-        description:
-          "Ilustrações personalizadas, pôsteres digitais, iconografia, artes para produtos físicos ou digitais."
+        category: "Identidade Visual & Design Gráfico",
+        items: [
+          "Criação de logotipos",
+          "Desenvolvimento de identidade visual completa",
+          "Definição de paleta de cores e tipografia",
+          "Materiais gráficos digitais",
+          "Artes para redes sociais",
+          "Padronização visual para marcas"
+        ]
       },
       {
-        title: "Conteúdo Digital & Social Media",
-        description:
-          "Criação de posts, templates, edição de imagens, visual strategy, kits de branding digital e anúncios."
+        category: "Edição de Imagens & Ilustração Digital",
+        items: [
+          "Retoque e tratamento profissional de imagens",
+          "Correções de cor e composição",
+          "Ilustração digital autoral",
+          "Artes conceituais e visuais criativos",
+          "Produção de thumbnails e capas digitais"
+        ]
       },
       {
-        title: "Produtos Físicos Personalizados",
-        description:
-          "Criação de estampas, design para camisetas, ecobags, papelaria e finalização para impressão."
+        category: "Marketing Digital & Conteúdo Visual",
+        items: [
+          "Criação de conteúdo visual para marcas",
+          "Artes para feed e stories",
+          "Apoio visual para campanhas digitais",
+          "Desenvolvimento de identidade visual para redes sociais"
+        ]
       },
       {
-        title: "Soluções Técnicas & Segurança",
-        description:
-          "Front-end, back-end, bancos de dados, segurança e gerenciamento de redes, VPN, criptografia, IDS/IPS, InfluxDB."
-      },
-    ],
+        category: "Consultoria Acadêmica & Técnica",
+        items: [
+          "Apoio a projetos acadêmicos e TCC",
+          "Orientação técnica em Sistemas para Internet",
+          "Consultoria em design e desenvolvimento web",
+          "Mentorias e oficinas introdutórias"
+        ]
+      }
+    ]
   },
 
+  /* =========================
+     🇺🇸 ENGLISH
+  ========================= */
   en: {
-    sectionTitle: "What I Do",
-    sectionIntro:
-      "Check out the main services I provide, combining design, development, and complete digital solutions.",
-    cta: "See all services",
-    services: [
+    title: "Services",
+    description:
+      "Comprehensive digital solutions that combine technology, design, and strategy. I work from concept to implementation, delivering functional, scalable, and visually consistent experiences for brands, products, and academic projects.",
+    cta: "Request a quote",
+    groups: [
       {
-        title: "Graphic Design & Branding",
-        description:
-          "Visual identity, logos, color palettes, typography, institutional materials, book covers, planners, packaging and labels."
+        category: "Web Development & Systems",
+        items: [
+          "Institutional websites and landing pages",
+          "Modern and responsive web applications",
+          "Full-Stack development",
+          "Mobile applications (React Native)",
+          "API and third-party service integrations",
+          "Database modeling and integration",
+          "System maintenance, refactoring, and evolution",
+          "Implementation of security best practices"
+        ]
       },
       {
-        title: "UI/UX & Web Development",
-        description:
-          "Prototyping, responsive interfaces, modern websites (React, Next.js), landing pages, portfolios and design adjustments."
+        category: "UI/UX & Interface Design",
+        items: [
+          "User Interface (UI) design",
+          "User Experience (UX) design",
+          "High-fidelity prototyping",
+          "Wireframes and user flows",
+          "Interface redesigns",
+          "Usability analysis and improvements"
+        ]
       },
       {
-        title: "Digital Art & Illustration",
-        description:
-          "Custom illustrations, digital posters, iconography, art for physical or digital products."
+        category: "Visual Identity & Graphic Design",
+        items: [
+          "Logo design",
+          "Complete visual identity systems",
+          "Color palette and typography definition",
+          "Digital graphic materials",
+          "Social media visuals",
+          "Brand visual standardization"
+        ]
       },
       {
-        title: "Digital Content & Social Media",
-        description:
-          "Posts, templates, image editing, visual strategy, digital branding kits and ad materials."
+        category: "Image Editing & Digital Illustration",
+        items: [
+          "Professional image retouching",
+          "Color correction and composition",
+          "Custom digital illustration",
+          "Concept art and creative visuals",
+          "Thumbnail and digital cover creation"
+        ]
       },
       {
-        title: "Personalized Physical Products",
-        description:
-          "Print design, t-shirt/ecobag designs, stationery and print-ready files."
+        category: "Digital Marketing & Visual Content",
+        items: [
+          "Visual content creation for brands",
+          "Feed and stories design",
+          "Visual support for digital campaigns",
+          "Social media visual identity development"
+        ]
       },
       {
-        title: "Technical Solutions & Security",
-        description:
-          "Front-end, back-end, databases, network security, VPN, encryption, IDS/IPS, InfluxDB."
-      },
-    ],
+        category: "Academic & Technical Consulting",
+        items: [
+          "Support for academic projects and theses",
+          "Technical guidance in Internet Systems",
+          "Web development and design consulting",
+          "Mentorships and introductory workshops"
+        ]
+      }
+    ]
   },
 
+  /* =========================
+     🇪🇸 ESPAÑOL
+  ========================= */
   es: {
-    sectionTitle: "Lo que hago",
-    sectionIntro:
-      "Descubre los principales servicios que ofrezco, combinando diseño, desarrollo y soluciones digitales completas.",
-    cta: "Ver todos los servicios",
-    services: [
+    title: "Servicios",
+    description:
+      "Soluciones digitales integrales que combinan tecnología, diseño y estrategia. Trabajo desde el concepto hasta la implementación, creando experiencias funcionales, escalables y visualmente coherentes para marcas, productos y proyectos académicos.",
+    cta: "Solicitar presupuesto",
+    groups: [
       {
-        title: "Diseño Gráfico & Branding",
-        description:
-          "Identidad visual, creación de logos, paletas, tipografías, materiales institucionales, portadas, planners, packaging y etiquetas."
+        category: "Desarrollo Web y Sistemas",
+        items: [
+          "Sitios institucionales y landing pages",
+          "Aplicaciones web modernas y responsivas",
+          "Desarrollo Full-Stack",
+          "Aplicaciones móviles (React Native)",
+          "Integración con APIs y servicios externos",
+          "Modelado e integración de bases de datos",
+          "Mantenimiento, refactorización y evolución de sistemas",
+          "Implementación de buenas prácticas de seguridad"
+        ]
       },
       {
-        title: "UI/UX & Desarrollo Web",
-        description:
-          "Prototipado, interfaces responsivas, sitios modernos (React, Next.js), landing pages, portafolios y ajustes de diseño."
+        category: "UI/UX y Diseño de Interfaces",
+        items: [
+          "Diseño de interfaces (UI)",
+          "Experiencia de usuario (UX)",
+          "Prototipado de alta fidelidad",
+          "Wireframes y flujos de navegación",
+          "Rediseño de interfaces",
+          "Análisis y mejora de usabilidad"
+        ]
       },
       {
-        title: "Arte Digital & Ilustración",
-        description:
-          "Ilustraciones personalizadas, posters digitales, iconografía, artes para productos físicos o digitales."
+        category: "Identidad Visual y Diseño Gráfico",
+        items: [
+          "Diseño de logotipos",
+          "Desarrollo de identidad visual completa",
+          "Definición de paleta de colores y tipografía",
+          "Materiales gráficos digitales",
+          "Artes para redes sociales",
+          "Estandarización visual de marcas"
+        ]
       },
       {
-        title: "Contenido Digital & Social Media",
-        description:
-          "Creación de posts, templates, edición de imágenes, estrategia visual, kits de branding digital y anuncios."
+        category: "Edición de Imágenes e Ilustración Digital",
+        items: [
+          "Retoque y tratamiento profesional de imágenes",
+          "Corrección de color y composición",
+          "Ilustración digital personalizada",
+          "Arte conceptual y visual creativo",
+          "Creación de miniaturas y portadas digitales"
+        ]
       },
       {
-        title: "Productos Físicos Personalizados",
-        description:
-          "Diseño de estampas, camisetas, ecobags, papelería y preparación de archivos para impresión."
+        category: "Marketing Digital y Contenido Visual",
+        items: [
+          "Creación de contenido visual para marcas",
+          "Diseño para feed y stories",
+          "Soporte visual para campañas digitales",
+          "Desarrollo de identidad visual para redes sociales"
+        ]
       },
       {
-        title: "Soluciones Técnicas & Seguridad",
-        description:
-          "Front-end, back-end, bases de datos, seguridad y gestión de redes, VPN, encriptación, IDS/IPS, InfluxDB."
-      },
-    ],
-  },
+        category: "Consultoría Académica y Técnica",
+        items: [
+          "Apoyo a proyectos académicos y trabajos finales",
+          "Orientación técnica en Sistemas para Internet",
+          "Consultoría en diseño y desarrollo web",
+          "Mentorías y talleres introductorios"
+        ]
+      }
+    ]
+  }
 };

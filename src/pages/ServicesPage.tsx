@@ -1,54 +1,52 @@
-import { useLanguage } from "../context/LanguageContext";
-import { servicesTexts } from "../content/servicesPreviewTexts";
+import React from "react";
 import "../styles/components/Services.css";
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { servicesContent } from "../content/servicesTexts";
 import Navbar from "../components/Navbar";
-import ConstructionScreen from "../components/ConstructionScreen";
+import { useLanguage } from "../context/LanguageContext";
+import ServicePackages from "../components/ServicePackages";
 
-export default function ServicesPage() {
+const ServicesPage: React.FC = () => {
   const { language } = useLanguage();
-  const content = servicesTexts[language];
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace("#", "");
-      // small timeout to ensure element exists/rendered
-      setTimeout(() => {
-        const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      }, 50);
-    }
-  }, [location]);
+  const t = servicesContent[language];
 
   return (
-      <section className="sessao services-section" id="services">
-        <Navbar />
-        <ConstructionScreen />
-      <h2>{content.sectionTitle}</h2>
-      <p className="services-intro">{content.sectionIntro}</p>
+    <section className="services-section">
+      <Navbar />
+      <header className="services-header">
+        <h1>{t.title}</h1>
+        <p>{t.description}</p>
+      </header>
 
-      <div className="services-list">
-        {content.services.map((service, index) => (
-          <details
-            key={index}
-            className="service-item"
-            open={openIndex === index}
-            onClick={() => setOpenIndex(openIndex === index ? null : index)}
-          >
-            <summary className="service-title">{service.title}</summary>
-            <p className="service-description">{service.description}</p>
-          </details>
+      {/* Grid invisível (desktop) */}
+      <div className="services-grid">
+        {t.groups.map((group) => (
+          <article key={group.category} className="service-card">
+            <h2>{group.category}</h2>
+            <ul>
+              {group.items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
         ))}
       </div>
 
+      {/* CTA */}
       <div className="services-cta">
-        <a href="/servicos" className="btn primary">
-          {content.cta}
+        <a
+          href="https://wa.me/5553984166749"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-button"
+          aria-label={t.cta}
+        >
+          {t.cta}
         </a>
       </div>
+
+      <ServicePackages />
     </section>
   );
-}
+};
+
+export default ServicesPage;
