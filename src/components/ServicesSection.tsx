@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { services } from "../content/services.data";
-import { useLanguage, Language } from "../context/LanguageContext";
+import { useLanguage } from "../context/LanguageContext";
 import { servicesTexts } from "../content/servicesPreviewTexts";
 import ServiceCard from "./ServiceCard";
 import ServiceModal from "./ServiceModal";
@@ -10,7 +10,7 @@ export default function ServicesSection() {
   const { language } = useLanguage();
   const [open, setOpen] = useState(false);
 
-  const t = servicesTexts[language as Language];
+  const t = servicesTexts[language];
 
   return (
     <section className="services-section">
