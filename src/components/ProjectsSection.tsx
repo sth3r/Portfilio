@@ -70,6 +70,14 @@ export default function ProjectsSection() {
               {t.visit}
             </a>
           </div>
+
+          <div className="project-card">
+            <h3>Chromatic</h3>
+            <span className="linguagens">Feito pelo Lovable</span>
+            <a  href="https://palette-perfection.vercel.app/"target="_blank">
+              {t.visit}
+            </a>
+          </div>
         </div>
       </section>
 
