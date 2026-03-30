@@ -1,5 +1,3 @@
-// import type { Language } from "../context/LanguageContext";
-
 export type ServiceItem = {
   title: string;
   description: string;
@@ -8,111 +6,111 @@ export type ServiceItem = {
 
 export type ServicesTexts = {
   sectionTitle: string;
-  intro?: string;
-  items: ServiceItem[];
+  sectionIntro?: string;
+  cta: string;
+  services: ServiceItem[];
   viewMore: string;
   ctaTitle: string;
-  ctadescription: string;
-  cta: string;
+  ctaDescription: string;
 };
 
 export const servicesTexts = {
   pt: {
     sectionTitle: "Serviços",
     sectionIntro:
-      "Soluções visuais e digitais que unem design, tecnologia e estratégia — do conceito à entrega final.",
+      "Do conceito à entrega — design e tecnologia integrados, sem precisar de uma equipe inteira.",
     cta: "Ver todos os serviços",
     services: [
       {
         title: "Branding & Design Visual",
         description:
-          "Criação de identidades visuais completas para marcas e projetos autorais, incluindo logotipos, sistemas visuais, materiais gráficos e aplicações consistentes."
+          "Identidades visuais que têm conceito, não só uma fonte bonita. Logotipo, sistema de cores, tipografia e aplicações que funcionam juntos — e que você consegue usar sem me ligar toda hora.",
       },
       {
         title: "UI/UX & Desenvolvimento Web",
         description:
-          "Design e desenvolvimento de interfaces modernas e sites responsivos, atuando em front-end e back-end, com foco em usabilidade, performance e clareza."
+          "Design de interface e código na mesma mão. Do wireframe ao deploy, com front-end e back-end integrados — sem ruído de tradução entre designer e desenvolvedor.",
       },
       {
         title: "Arquitetura Web & Segurança",
         description:
-          "Estruturação de aplicações web organizadas e confiáveis, com atenção à segurança, bancos de dados, controle de acesso e boas práticas de infraestrutura."
+          "Aplicações organizadas para durar: banco de dados bem modelado, controle de acesso, boas práticas de segurança e estrutura que não vira bagunça quando o projeto cresce.",
       },
       {
-        title: "Arte Digital, Conteúdo & Produtos",
+        title: "Arte Digital & Conteúdo Visual",
         description:
-          "Criação de arte digital, ilustrações e conteúdo visual para mídias digitais e produtos físicos, do conceito à preparação para produção."
-      }
+          "Ilustrações, retoques, thumbnails e materiais visuais para digital e físico — com acabamento de quem entende de composição, não só de ferramentas.",
+      },
     ],
     viewMore: "Ver detalhes",
     ctaTitle: "Todos os serviços",
     ctaDescription:
-      "Veja a lista completa de serviços, processos, prazos e formas de contratação.",
+      "Lista completa com entregas, processo e formas de contratação.",
   },
 
   en: {
     sectionTitle: "Services",
     sectionIntro:
-      "Visual and digital solutions that combine design, technology and strategy — from concept to final delivery.",
+      "From concept to delivery — design and technology integrated, without needing a whole team.",
     cta: "View all services",
     services: [
       {
         title: "Branding & Visual Design",
         description:
-          "Complete visual identities for brands and creative projects, including logos, visual systems and consistent brand assets."
+          "Visual identities built on concept, not just a nice font. Logo, color system, typography, and applications that work together — and that you can actually use without calling me every time.",
       },
       {
         title: "UI/UX & Web Development",
         description:
-          "Design and development of modern, responsive websites, working across front-end and back-end with a focus on usability and performance."
+          "Interface design and code in the same hands. From wireframe to deployment, with front-end and back-end integrated — no translation noise between designer and developer.",
       },
       {
         title: "Web Architecture & Security",
         description:
-          "Structured and reliable web applications with attention to security, databases, access control and infrastructure best practices."
+          "Applications built to last: well-modeled databases, access control, security best practices, and a structure that doesn't fall apart when the project scales.",
       },
       {
-        title: "Digital Art, Content & Products",
+        title: "Digital Art & Visual Content",
         description:
-          "Digital artwork, illustrations and visual content for online platforms and physical products, from concept to production-ready files."
-      }
+          "Illustrations, retouching, thumbnails, and visual materials for digital and print — with the finish of someone who understands composition, not just tools.",
+      },
     ],
     viewMore: "View details",
     ctaTitle: "All services",
     ctaDescription:
-      "Explore the full list of services, processes, timelines and pricing models.",
+      "Full list with deliverables, process, and engagement models.",
   },
 
   es: {
     sectionTitle: "Servicios",
     sectionIntro:
-      "Soluciones visuales y digitales que combinan diseño, tecnología y estrategia — del concepto a la entrega final.",
+      "Del concepto a la entrega — diseño y tecnología integrados, sin necesitar un equipo entero.",
     cta: "Ver todos los servicios",
     services: [
       {
         title: "Branding y Diseño Visual",
         description:
-          "Identidades visuales completas para marcas y proyectos creativos, incluyendo logotipos, sistemas visuales y aplicaciones coherentes."
+          "Identidades visuales con concepto, no solo una fuente bonita. Logotipo, sistema de colores, tipografía y aplicaciones que funcionan juntos — y que puedes usar sin llamarme cada vez.",
       },
       {
         title: "UI/UX y Desarrollo Web",
         description:
-          "Diseño y desarrollo de sitios web modernos y responsivos, trabajando en front-end y back-end con foco en usabilidad y rendimiento."
+          "Diseño de interfaz y código en las mismas manos. Del wireframe al deploy, con front-end y back-end integrados — sin ruido de traducción entre diseñador y desarrollador.",
       },
       {
         title: "Arquitectura Web y Seguridad",
         description:
-          "Estructuración de aplicaciones web confiables, con atención a seguridad, bases de datos, control de accesos y buenas prácticas."
+          "Aplicaciones organizadas para durar: bases de datos bien modeladas, control de acceso, buenas prácticas de seguridad y estructura que no se desordena cuando el proyecto crece.",
       },
       {
-        title: "Arte Digital, Contenido y Productos",
+        title: "Arte Digital y Contenido Visual",
         description:
-          "Creación de arte digital, ilustraciones y contenido visual para plataformas digitales y productos físicos."
-      }
+          "Ilustraciones, retoques, miniaturas y materiales visuales para digital e impresión — con el acabado de quien entiende de composición, no solo de herramientas.",
+      },
     ],
     viewMore: "Ver detalles",
     ctaTitle: "Todos los servicios",
     ctaDescription:
-      "Consulta la lista completa de servicios, procesos y condiciones.",
-  }
+      "Lista completa con entregables, proceso y modalidades de contratación.",
+  },
 };

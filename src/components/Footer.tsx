@@ -31,7 +31,7 @@ export default function Footer() {
       </p>
 
       <p>
-        © 2025 Esther Rodrigues — {t.footer.rights}
+        © 2026 Esther Rodrigues — {t.footer.rights}
       </p>
     </footer>
   );

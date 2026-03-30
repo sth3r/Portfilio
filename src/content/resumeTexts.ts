@@ -25,25 +25,26 @@ export const resumeTexts: Record<Language, ResumeTexts> = {
         title: "Education",
         items: [
           {
-            title: "Bachelor’s Degree in Internet Systems",
+            title: "Bachelor's Degree in Internet Systems",
             subtitle: "IFSul",
             period: "2020 – 2025",
             description:
-              "Focused on web development, system architecture, databases, and user interface design."
+              "Web development, system architecture, databases, software engineering, network security, and UI design — with a final thesis focused on applied digital solutions.",
           },
           {
             title: "Technical Degree in Visual Communication",
             subtitle: "IFSul",
             period: "2015 – 2019",
             description:
-              "Strong foundation in graphic design, visual identity, and digital communication."
+              "Graphic design, visual identity, typography, and digital communication. Foundation that directly informs how I approach interface and brand design today.",
           },
           {
-            title: "English Language Program — Advanced Level",
+            title: "English Language Program — Master Level",
             subtitle: "CCAA",
-            period: "2013 – 2018"
-          }
-        ]
+            period: "2013 – 2018",
+            description: "Advanced proficiency in written and spoken English.",
+          },
+        ],
       },
       {
         title: "Professional Experience",
@@ -53,54 +54,69 @@ export const resumeTexts: Record<Language, ResumeTexts> = {
             subtitle: "IFSul — MTur / Mundi Project",
             period: "2022 – 2023",
             description:
-              "Contributed to research-oriented digital solutions, assisting with system logic, interface structure, and data organization."
+              "Managed student data for a distance learning platform (Mundi/IFSul), contributing to interface structure, data organization, and system logic in an academic research context.",
           },
           {
             title: "Freelance Designer",
             period: "2013 – 2021",
             description:
-              "Delivered UI design, visual identity, and front-end solutions for independent clients, focusing on usability, clarity, and responsive layouts."
+              "Over 8 years delivering visual identity, UI design, and front-end solutions independently. Work includes logo systems, brand materials, image retouching, thumbnails, and visual concepts for music video productions published on YouTube.",
           },
           {
             title: "Marketing Intern",
             subtitle: "DNA Sell",
             period: "2021",
             description:
-              "Supported digital marketing strategies, visual content creation, and brand communication initiatives."
-          }
-        ]
+              "Created visual identity, illustrations, and digital posts. Managed content for social media (feed and stories), supporting the brand's digital presence and communication consistency.",
+          },
+        ],
       },
-    //   {
-    //     title: "Talks & Technical Events",
-    //     items: [
-    //       {
-    //         title: "Academic & Technical Events Participation",
-    //         description:
-    //           "Participation in technology and design events such as SASPI, Design Week, and TSI Talks."
-    //       }
-    //     ]
-    //   },
-    //   {
-    //     title: "Technical Skills",
-    //     items: [
-    //       {
-    //         title: "Front-End & Web",
-    //         description:
-    //           "HTML, CSS, JavaScript, TypeScript, React, React Native, Laravel, PHP, Java"
-    //       },
-    //       {
-    //         title: "Databases",
-    //         description:
-    //           "SQL, MongoDB, Firestore"
-    //       },
-    //       {
-    //         title: "Design & UI/UX",
-    //         description:
-    //           "Adobe Photoshop, Illustrator, InDesign; experience with interface design and visual systems."
-    //       }
-    //     ]
-    //   }
-    ]
+      {
+        title: "Technical Skills",
+        items: [
+          {
+            title: "Front-End & Web",
+            description:
+              "HTML, CSS, JavaScript, TypeScript, React, React Native — comfortable taking a design from Figma to a responsive, functional interface.",
+          },
+          {
+            title: "Back-End & Databases",
+            description:
+              "PHP, Laravel, Java, SQL, MongoDB, Cloud Firestore — experience building and integrating back-end logic with data-driven systems.",
+          },
+          {
+            title: "Design & UI/UX",
+            description:
+              "Figma, Adobe Photoshop, Illustrator, InDesign — interface design, logo systems, visual identity, and digital content production.",
+          },
+          {
+            title: "Other",
+            description:
+              "Git/GitHub, Agile methodologies, requirements analysis, network security concepts (VPN, firewall, IDS/IPS).",
+          },
+        ],
+      },
+      {
+        title: "Talks & Events",
+        items: [
+          {
+            title: "Speaker — Projects Qualification Meeting (CSTSI)",
+            period: "2025",
+            description: "Presented final degree project to an academic panel.",
+          },
+          {
+            title: "Participant — SASPI 11 (IFSul Academic Week)",
+            period: "2023",
+            description: "80-hour technology and systems integration event.",
+          },
+          {
+            title: "Highlight — 5th Student Video Festival, Pelotas",
+            period: "2018",
+            description: "Received a Direction Highlight award.",
+          },
+        ],
+      },
+    ],
   },
 
   pt: {
@@ -115,21 +131,22 @@ export const resumeTexts: Record<Language, ResumeTexts> = {
             subtitle: "IFSul",
             period: "2020 – 2025",
             description:
-              "Foco em desenvolvimento web, arquitetura de sistemas, bancos de dados e design de interfaces."
+              "Desenvolvimento web, arquitetura de sistemas, bancos de dados, engenharia de software, segurança de redes e design de interfaces — com TCC voltado a soluções digitais aplicadas.",
           },
           {
             title: "Técnico em Comunicação Visual",
             subtitle: "IFSul",
             period: "2015 – 2019",
             description:
-              "Base sólida em design gráfico, identidade visual e comunicação digital."
+              "Design gráfico, identidade visual, tipografia e comunicação digital. Base que informa diretamente minha abordagem em design de interface e marca.",
           },
           {
-            title: "Inglês — Nível Avançado",
+            title: "Inglês — Nível Master",
             subtitle: "CCAA",
-            period: "2013 – 2018"
-          }
-        ]
+            period: "2013 – 2018",
+            description: "Proficiência avançada em inglês escrito e falado.",
+          },
+        ],
       },
       {
         title: "Experiência Profissional",
@@ -139,54 +156,69 @@ export const resumeTexts: Record<Language, ResumeTexts> = {
             subtitle: "IFSul — Projeto MTur / Mundi",
             period: "2022 – 2023",
             description:
-              "Contribuição em soluções digitais de pesquisa, auxiliando na lógica do sistema, estrutura de interfaces e organização de dados."
+              "Gerenciamento de dados de alunos da plataforma EAD Mundi/IFSul, com contribuições em estrutura de interfaces, organização de dados e lógica de sistema em contexto de pesquisa acadêmica.",
           },
           {
             title: "Freelancer — Design",
             period: "2013 – 2021",
             description:
-              "Entrega de design de interface, identidade visual e soluções front-end para clientes independentes, com foco em usabilidade, clareza e layouts responsivos."
+              "Mais de 8 anos entregando identidade visual, design de interface e soluções front-end de forma independente. Trabalhos incluem sistemas de logotipo, materiais de marca, retoque de imagens, thumbnails e conceitos visuais para videoclipes publicados no YouTube.",
           },
           {
             title: "Estagiária de Marketing",
             subtitle: "DNA Sell",
             period: "2021",
             description:
-              "Suporte em estratégias de marketing digital, criação de conteúdos visuais e comunicação de marca."
-          }
-        ]
+              "Criação de identidade visual, ilustrações e postagens digitais. Gestão de conteúdo para redes sociais (feed e stories), apoiando a presença digital e a consistência de comunicação da marca.",
+          },
+        ],
       },
-    //   {
-    //     title: "Palestras e Eventos Técnicos",
-    //     items: [
-    //       {
-    //         title: "Participação em Eventos Acadêmicos e Técnicos",
-    //         description:
-    //           "Participação em eventos de tecnologia e design, como SASPI, Semana do Design e TSI Talks."
-    //       }
-    //     ]
-    //   },
-    //   {
-    //     title: "Habilidades Técnicas",
-    //     items: [
-    //       {
-    //         title: "Front-End & Web",
-    //         description:
-    //           "HTML, CSS, JavaScript, TypeScript, React, React Native, Laravel, PHP, Java"
-    //       },
-    //       {
-    //         title: "Bancos de Dados",
-    //         description:
-    //           "SQL, MongoDB, Firestore"
-    //       },
-    //       {
-    //         title: "Design & UI/UX",
-    //         description:
-    //           "Adobe Photoshop, Illustrator, InDesign; experiência em design de interfaces e sistemas visuais."
-    //       }
-    //     ]
-    //   }
-    ]
+      {
+        title: "Habilidades Técnicas",
+        items: [
+          {
+            title: "Front-End & Web",
+            description:
+              "HTML, CSS, JavaScript, TypeScript, React, React Native — do layout no Figma à interface responsiva e funcional.",
+          },
+          {
+            title: "Back-End & Banco de Dados",
+            description:
+              "PHP, Laravel, Java, SQL, MongoDB, Cloud Firestore — experiência em lógica de back-end e sistemas orientados a dados.",
+          },
+          {
+            title: "Design & UI/UX",
+            description:
+              "Figma, Adobe Photoshop, Illustrator, InDesign — design de interfaces, sistemas de identidade visual e produção de conteúdo digital.",
+          },
+          {
+            title: "Outros",
+            description:
+              "Git/GitHub, metodologias ágeis, análise de requisitos, conceitos de segurança de redes (VPN, firewall, IDS/IPS).",
+          },
+        ],
+      },
+      {
+        title: "Palestras e Eventos",
+        items: [
+          {
+            title: "Palestrante — Encontro de Projetos de Qualificação CSTSI",
+            period: "2025",
+            description: "Apresentação do projeto de TCC para banca acadêmica.",
+          },
+          {
+            title: "Participante — SASPI 11 (Semana Acadêmica IFSul)",
+            period: "2023",
+            description: "Evento de tecnologia e integração de sistemas — 80h.",
+          },
+          {
+            title: "Destaque Direção — 5º Festival de Vídeo Estudantil de Pelotas",
+            period: "2018",
+            description: "Reconhecimento na categoria direção.",
+          },
+        ],
+      },
+    ],
   },
 
   es: {
@@ -201,21 +233,22 @@ export const resumeTexts: Record<Language, ResumeTexts> = {
             subtitle: "IFSul",
             period: "2020 – 2025",
             description:
-              "Enfoque en desarrollo web, arquitectura de sistemas, bases de datos y diseño de interfaces."
+              "Desarrollo web, arquitectura de sistemas, bases de datos, ingeniería de software, seguridad de redes y diseño de interfaces — con proyecto final orientado a soluciones digitales aplicadas.",
           },
           {
             title: "Técnico en Comunicación Visual",
             subtitle: "IFSul",
             period: "2015 – 2019",
             description:
-              "Base sólida en diseño gráfico, identidad visual y comunicación digital."
+              "Diseño gráfico, identidad visual, tipografía y comunicación digital. Base que informa directamente mi enfoque en diseño de interfaces y marca.",
           },
           {
             title: "Inglés — Nivel Avanzado",
             subtitle: "CCAA",
-            period: "2013 – 2018"
-          }
-        ]
+            period: "2013 – 2018",
+            description: "Dominio avanzado del inglés escrito y hablado.",
+          },
+        ],
       },
       {
         title: "Experiencia Profesional",
@@ -225,53 +258,68 @@ export const resumeTexts: Record<Language, ResumeTexts> = {
             subtitle: "IFSul — Proyecto MTur / Mundi",
             period: "2022 – 2023",
             description:
-              "Contribuyó en soluciones digitales de investigación, asistiendo en la lógica del sistema, estructura de interfaces y organización de datos."
+              "Gestión de datos de estudiantes en la plataforma de e-learning Mundi/IFSul, con aportes en estructura de interfaces, organización de datos y lógica de sistema en contexto académico.",
           },
           {
             title: "Freelance — Diseño",
             period: "2013 – 2021",
             description:
-              "Entrega de diseño de interfaz, identidad visual y soluciones front-end para clientes independientes, con enfoque en usabilidad, claridad y diseños responsivos."
+              "Más de 8 años entregando identidad visual, diseño de interfaz y soluciones front-end de forma independiente. Trabajos incluyen sistemas de logotipo, materiales de marca, retoque de imágenes, thumbnails y conceptos visuales para videoclips publicados en YouTube.",
           },
           {
             title: "Pasantía en Marketing",
             subtitle: "DNA Sell",
             period: "2021",
             description:
-              "Apoyo en estrategias de marketing digital, creación de contenido visual y comunicación de marca."
-          }
-        ]
+              "Creación de identidad visual, ilustraciones y publicaciones digitales. Gestión de contenido para redes sociales (feed y stories), apoyando la presencia digital y la coherencia de comunicación de marca.",
+          },
+        ],
       },
-    //   {
-    //     title: "Charlas y Eventos Técnicos",
-    //     items: [
-    //       {
-    //         title: "Participación en Eventos Académicos y Técnicos",
-    //         description:
-    //           "Participación en eventos de tecnología y diseño, como SASPI, Semana del Diseño y TSI Talks."
-    //       }
-    //     ]
-    //   },
-    //   {
-    //     title: "Habilidades Técnicas",
-    //     items: [
-    //       {
-    //         title: "Front-End & Web",
-    //         description:
-    //           "HTML, CSS, JavaScript, TypeScript, React, React Native, Laravel, PHP, Java"
-    //       },
-    //       {
-    //         title: "Bases de Datos",
-    //         description:
-    //           "SQL, MongoDB, Firestore"
-    //       },
-    //       {
-    //         title: "Diseño & UI/UX",
-    //         description:
-    //           "Adobe Photoshop, Illustrator, InDesign; experiencia en diseño de interfaces y sistemas visuales."
-    //       }
-    //     ]
-    //   }
-    ]
-  }
+      {
+        title: "Habilidades Técnicas",
+        items: [
+          {
+            title: "Front-End & Web",
+            description:
+              "HTML, CSS, JavaScript, TypeScript, React, React Native — del diseño en Figma a la interfaz responsiva y funcional.",
+          },
+          {
+            title: "Back-End & Bases de Datos",
+            description:
+              "PHP, Laravel, Java, SQL, MongoDB, Cloud Firestore — experiencia en lógica de back-end y sistemas orientados a datos.",
+          },
+          {
+            title: "Diseño & UI/UX",
+            description:
+              "Figma, Adobe Photoshop, Illustrator, InDesign — diseño de interfaces, sistemas de identidad visual y producción de contenido digital.",
+          },
+          {
+            title: "Otros",
+            description:
+              "Git/GitHub, metodologías ágiles, análisis de requisitos, conceptos de seguridad de redes (VPN, firewall, IDS/IPS).",
+          },
+        ],
+      },
+      {
+        title: "Charlas y Eventos",
+        items: [
+          {
+            title: "Ponente — Encuentro de Proyectos de Calificación CSTSI",
+            period: "2025",
+            description: "Presentación del proyecto final ante panel académico.",
+          },
+          {
+            title: "Participante — SASPI 11 (Semana Académica IFSul)",
+            period: "2023",
+            description: "Evento de tecnología e integración de sistemas — 80h.",
+          },
+          {
+            title: "Mención Dirección — 5º Festival de Vídeo Estudiantil de Pelotas",
+            period: "2018",
+            description: "Reconocimiento en la categoría dirección.",
+          },
+        ],
+      },
+    ],
+  },
 };

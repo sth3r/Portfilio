@@ -45,11 +45,11 @@ export default function Home() {
       {/* 4️⃣ Provas reais */}
       <ProjectsSection />
 
-      {/* 5️⃣ Como você trabalha (confiança p/ clientes) */}
-      <ProcessPreview />
-
       {/* 6️⃣ Credibilidade formal */}
       <ResumeSection />
+
+      {/* 5️⃣ Como você trabalha (confiança p/ clientes) */}
+      <ProcessPreview />
 
       <Footer />
     </>

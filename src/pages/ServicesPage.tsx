@@ -10,14 +10,18 @@ const ServicesPage: React.FC = () => {
   const t = servicesContent[language];
 
   return (
-    <section className="services-section">
+    <main className="services-section">
       <Navbar />
+
       <header className="services-header">
         <h1>{t.title}</h1>
         <p>{t.description}</p>
       </header>
 
-      {/* Grid invisível (desktop) */}
+      {/* 1️⃣ Decisão rápida — pacotes em destaque */}
+      <ServicePackages />
+
+      {/* 2️⃣ Detalhamento completo para quem quer saber mais */}
       <div className="services-grid">
         {t.groups.map((group) => (
           <article key={group.category} className="service-card">
@@ -31,7 +35,7 @@ const ServicesPage: React.FC = () => {
         ))}
       </div>
 
-      {/* CTA */}
+      {/* 3️⃣ CTA depois de ver tudo */}
       <div className="services-cta">
         <a
           href="https://wa.me/5553984166749"
@@ -43,9 +47,7 @@ const ServicesPage: React.FC = () => {
           {t.cta}
         </a>
       </div>
-
-      <ServicePackages />
-    </section>
+    </main>
   );
 };
 

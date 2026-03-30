@@ -1,5 +1,3 @@
-// content/services.ts
-
 export type ServiceGroup = {
   category: string;
   items: string[];
@@ -13,228 +11,168 @@ export type ServicesContent = {
 };
 
 export const servicesContent: Record<"pt" | "en" | "es", ServicesContent> = {
-  /* =========================
-     🇧🇷 PORTUGUÊS
-  ========================= */
   pt: {
     title: "Serviços",
     description:
-      "Soluções digitais completas que unem tecnologia, design e estratégia. Atuo do conceito à implementação, criando experiências funcionais, escaláveis e visualmente consistentes para marcas, produtos e projetos acadêmicos.",
+      "Design e tecnologia integrados — do conceito à entrega, sem precisar coordenar uma equipe inteira. Atuo em branding, interfaces, desenvolvimento web e conteúdo visual com profundidade em cada área.",
     cta: "Solicitar orçamento",
     groups: [
       {
         category: "Desenvolvimento Web & Sistemas",
         items: [
-          "Sites institucionais e landing pages",
-          "Aplicações web modernas e responsivas",
-          "Desenvolvimento Full-Stack",
-          "Aplicativos mobile (React Native)",
+          "Sites institucionais e landing pages com design próprio",
+          "Aplicações web modernas com React e TypeScript",
+          "Desenvolvimento Full-Stack (front-end + back-end)",
+          "Aplicativos mobile com React Native",
           "Integração com APIs e serviços externos",
-          "Integração e modelagem de bancos de dados",
-          "Manutenção, refatoração e evolução de sistemas",
-          "Implementação de boas práticas de segurança"
-        ]
+          "Modelagem e integração de bancos de dados",
+          "Manutenção e refatoração de sistemas existentes",
+          "Boas práticas de segurança e controle de acesso",
+        ],
       },
       {
         category: "UI/UX & Design de Interfaces",
         items: [
-          "Design de interfaces (UI)",
-          "Experiência do usuário (UX)",
-          "Prototipação de alta fidelidade",
+          "Design de interfaces (UI) do zero ou a partir de briefing",
+          "Pesquisa e definição de experiência do usuário (UX)",
+          "Prototipação de alta fidelidade no Figma",
           "Wireframes e fluxos de navegação",
-          "Redesign de interfaces existentes",
-          "Análise e melhoria de usabilidade"
-        ]
+          "Redesign de interfaces com análise de usabilidade",
+          "Handoff organizado para desenvolvimento",
+        ],
       },
       {
         category: "Identidade Visual & Design Gráfico",
         items: [
-          "Criação de logotipos",
-          "Desenvolvimento de identidade visual completa",
-          "Definição de paleta de cores e tipografia",
-          "Materiais gráficos digitais",
-          "Artes para redes sociais",
-          "Padronização visual para marcas"
-        ]
+          "Criação de logotipos com conceito",
+          "Sistema de identidade visual completo",
+          "Paleta de cores e tipografia com critério",
+          "Manual de marca para uso independente",
+          "Materiais gráficos digitais e para redes sociais",
+          "Padronização visual de marcas existentes",
+        ],
       },
       {
-        category: "Edição de Imagens & Ilustração Digital",
+        category: "Arte Digital & Conteúdo Visual",
         items: [
           "Retoque e tratamento profissional de imagens",
-          "Correções de cor e composição",
+          "Correção de cor e composição",
           "Ilustração digital autoral",
-          "Artes conceituais e visuais criativos",
-          "Produção de thumbnails e capas digitais"
-        ]
+          "Arte conceitual e visuais criativos",
+          "Thumbnails, capas e materiais para plataformas digitais",
+          "Artes para feed, stories e campanhas",
+        ],
       },
-      {
-        category: "Marketing Digital & Conteúdo Visual",
-        items: [
-          "Criação de conteúdo visual para marcas",
-          "Artes para feed e stories",
-          "Apoio visual para campanhas digitais",
-          "Desenvolvimento de identidade visual para redes sociais"
-        ]
-      },
-      {
-        category: "Consultoria Acadêmica & Técnica",
-        items: [
-          "Apoio a projetos acadêmicos e TCC",
-          "Orientação técnica em Sistemas para Internet",
-          "Consultoria em design e desenvolvimento web",
-          "Mentorias e oficinas introdutórias"
-        ]
-      }
-    ]
+    ],
   },
 
-  /* =========================
-     🇺🇸 ENGLISH
-  ========================= */
   en: {
     title: "Services",
     description:
-      "Comprehensive digital solutions that combine technology, design, and strategy. I work from concept to implementation, delivering functional, scalable, and visually consistent experiences for brands, products, and academic projects.",
+      "Design and technology integrated — from concept to delivery, without coordinating a whole team. I work across branding, interfaces, web development, and visual content with depth in each area.",
     cta: "Request a quote",
     groups: [
       {
         category: "Web Development & Systems",
         items: [
-          "Institutional websites and landing pages",
-          "Modern and responsive web applications",
-          "Full-Stack development",
-          "Mobile applications (React Native)",
-          "API and third-party service integrations",
+          "Institutional websites and landing pages with custom design",
+          "Modern web applications with React and TypeScript",
+          "Full-Stack development (front-end + back-end)",
+          "Mobile applications with React Native",
+          "API and third-party service integration",
           "Database modeling and integration",
-          "System maintenance, refactoring, and evolution",
-          "Implementation of security best practices"
-        ]
+          "Maintenance and refactoring of existing systems",
+          "Security best practices and access control",
+        ],
       },
       {
         category: "UI/UX & Interface Design",
         items: [
-          "User Interface (UI) design",
-          "User Experience (UX) design",
-          "High-fidelity prototyping",
+          "Interface design (UI) from scratch or from a brief",
+          "User experience (UX) research and definition",
+          "High-fidelity prototyping in Figma",
           "Wireframes and user flows",
-          "Interface redesigns",
-          "Usability analysis and improvements"
-        ]
+          "Interface redesign with usability analysis",
+          "Organized handoff for development",
+        ],
       },
       {
         category: "Visual Identity & Graphic Design",
         items: [
-          "Logo design",
+          "Logo design with concept",
           "Complete visual identity systems",
-          "Color palette and typography definition",
-          "Digital graphic materials",
-          "Social media visuals",
-          "Brand visual standardization"
-        ]
+          "Color palette and typography with intention",
+          "Brand guidelines for independent use",
+          "Digital graphic materials and social media assets",
+          "Visual standardization for existing brands",
+        ],
       },
       {
-        category: "Image Editing & Digital Illustration",
+        category: "Digital Art & Visual Content",
         items: [
-          "Professional image retouching",
+          "Professional image retouching and editing",
           "Color correction and composition",
           "Custom digital illustration",
           "Concept art and creative visuals",
-          "Thumbnail and digital cover creation"
-        ]
+          "Thumbnails, covers, and assets for digital platforms",
+          "Feed, stories, and campaign visuals",
+        ],
       },
-      {
-        category: "Digital Marketing & Visual Content",
-        items: [
-          "Visual content creation for brands",
-          "Feed and stories design",
-          "Visual support for digital campaigns",
-          "Social media visual identity development"
-        ]
-      },
-      {
-        category: "Academic & Technical Consulting",
-        items: [
-          "Support for academic projects and theses",
-          "Technical guidance in Internet Systems",
-          "Web development and design consulting",
-          "Mentorships and introductory workshops"
-        ]
-      }
-    ]
+    ],
   },
 
-  /* =========================
-     🇪🇸 ESPAÑOL
-  ========================= */
   es: {
     title: "Servicios",
     description:
-      "Soluciones digitales integrales que combinan tecnología, diseño y estrategia. Trabajo desde el concepto hasta la implementación, creando experiencias funcionales, escalables y visualmente coherentes para marcas, productos y proyectos académicos.",
+      "Diseño y tecnología integrados — del concepto a la entrega, sin coordinar un equipo entero. Trabajo en branding, interfaces, desarrollo web y contenido visual con profundidad en cada área.",
     cta: "Solicitar presupuesto",
     groups: [
       {
         category: "Desarrollo Web y Sistemas",
         items: [
-          "Sitios institucionales y landing pages",
-          "Aplicaciones web modernas y responsivas",
-          "Desarrollo Full-Stack",
-          "Aplicaciones móviles (React Native)",
+          "Sitios institucionales y landing pages con diseño propio",
+          "Aplicaciones web modernas con React y TypeScript",
+          "Desarrollo Full-Stack (front-end + back-end)",
+          "Aplicaciones móviles con React Native",
           "Integración con APIs y servicios externos",
           "Modelado e integración de bases de datos",
-          "Mantenimiento, refactorización y evolución de sistemas",
-          "Implementación de buenas prácticas de seguridad"
-        ]
+          "Mantenimiento y refactorización de sistemas existentes",
+          "Buenas prácticas de seguridad y control de acceso",
+        ],
       },
       {
         category: "UI/UX y Diseño de Interfaces",
         items: [
-          "Diseño de interfaces (UI)",
-          "Experiencia de usuario (UX)",
-          "Prototipado de alta fidelidad",
+          "Diseño de interfaces (UI) desde cero o desde un brief",
+          "Investigación y definición de experiencia de usuario (UX)",
+          "Prototipado de alta fidelidad en Figma",
           "Wireframes y flujos de navegación",
-          "Rediseño de interfaces",
-          "Análisis y mejora de usabilidad"
-        ]
+          "Rediseño de interfaces con análisis de usabilidad",
+          "Handoff organizado para desarrollo",
+        ],
       },
       {
         category: "Identidad Visual y Diseño Gráfico",
         items: [
-          "Diseño de logotipos",
-          "Desarrollo de identidad visual completa",
-          "Definición de paleta de colores y tipografía",
-          "Materiales gráficos digitales",
-          "Artes para redes sociales",
-          "Estandarización visual de marcas"
-        ]
+          "Diseño de logotipos con concepto",
+          "Sistema de identidad visual completo",
+          "Paleta de colores y tipografía con criterio",
+          "Manual de marca para uso independiente",
+          "Materiales gráficos digitales y para redes sociales",
+          "Estandarización visual de marcas existentes",
+        ],
       },
       {
-        category: "Edición de Imágenes e Ilustración Digital",
+        category: "Arte Digital y Contenido Visual",
         items: [
           "Retoque y tratamiento profesional de imágenes",
           "Corrección de color y composición",
           "Ilustración digital personalizada",
-          "Arte conceptual y visual creativo",
-          "Creación de miniaturas y portadas digitales"
-        ]
+          "Arte conceptual y visuales creativos",
+          "Miniaturas, portadas y materiales para plataformas digitales",
+          "Artes para feed, stories y campañas",
+        ],
       },
-      {
-        category: "Marketing Digital y Contenido Visual",
-        items: [
-          "Creación de contenido visual para marcas",
-          "Diseño para feed y stories",
-          "Soporte visual para campañas digitales",
-          "Desarrollo de identidad visual para redes sociales"
-        ]
-      },
-      {
-        category: "Consultoría Académica y Técnica",
-        items: [
-          "Apoyo a proyectos académicos y trabajos finales",
-          "Orientación técnica en Sistemas para Internet",
-          "Consultoría en diseño y desarrollo web",
-          "Mentorías y talleres introductorios"
-        ]
-      }
-    ]
-  }
+    ],
+  },
 };

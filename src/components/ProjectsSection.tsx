@@ -52,6 +52,24 @@ export default function ProjectsSection() {
               {t.visit}
             </a>
           </div>
+
+          <div className="project-card">
+            <h3>Estheria</h3>
+            <span className="linguagens">React, TypeScript, Vercel, Firestore</span>
+            <span className="funcionalidades">
+              Frete, carrinho, checkout, email de confirmação.
+            </span>
+            <a  href="https://estheria.vercel.app/"target="_blank">
+              {t.visit}
+            </a>
+          </div>
+
+          <div className="project-card">
+            <h3>talvez-uma-artista</h3>
+            <a  href="https://talvez-uma-artista.vercel.app/"target="_blank">
+              {t.visit}
+            </a>
+          </div>
         </div>
       </section>
 

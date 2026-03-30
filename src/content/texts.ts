@@ -1,5 +1,9 @@
 import type { Language } from "../context/LanguageContext";
 
+// ⚠️ ATENÇÃO: o bloco `hero` abaixo pode estar duplicando heroContent.ts.
+// Verifique qual dos dois é importado no componente hero.tsx e remova o outro.
+// Se heroContent.ts for o usado, delete o tipo HeroTexts e o campo hero daqui.
+
 type HeroTexts = {
   title: string;
   intro: string;
@@ -39,12 +43,12 @@ export type AppTexts = {
 export const texts: Record<Language, AppTexts> = {
   pt: {
     nav: {
-      about: "Quem sou eu",
+      about: "Sobre mim",
       projects: "Projetos",
       services: "Serviços",
       curriculo: "Currículo",
       skills: "Habilidades",
-      processo: "Processo criativo",
+      processo: "Processo",
     },
     header: {
       mode: "split",
@@ -52,14 +56,15 @@ export const texts: Record<Language, AppTexts> = {
       prefix: "DA",
       name: "Esther",
     },
+    // Se heroContent.ts for o usado no componente, este bloco pode ser removido.
     hero: {
       title: "Olá! Sou Esther Rodrigues",
       intro:
-        "Sou apaixonada por design e desenvolvimento web, com foco em criar experiências digitais que unem estética, funcionalidade e propósito.",
+        "Design e tecnologia sob o mesmo teto — do visual ao funcional, sem depender de outra pessoa.",
       highlight:
-        "Atuo com UI/UX design, front-end e identidade visual, transformando ideias em interfaces claras, intuitivas e visualmente marcantes.",
-      projects: "Ver Projetos",
-      contact: "Baixar Currículo",
+        "Formada em Sistemas para Internet e Design Gráfico, entrego desde a identidade visual até o sistema rodando: UI/UX, front-end, back-end e comunicação de marca integrados em uma visão só.",
+      projects: "O que eu faço",
+      contact: "Baixar currículo",
     },
     footer: {
       contact: "Contato",
@@ -69,26 +74,26 @@ export const texts: Record<Language, AppTexts> = {
 
   en: {
     nav: {
-      about: "About me",
+      about: "About",
       projects: "Projects",
       curriculo: "Resume",
       skills: "Skills",
-      processo: "Creative Process",
+      processo: "Process",
       services: "Services",
     },
     header: {
       mode: "possessive",
-      line1: "Esther’s",
+      line1: "Esther's",
       name: "Portfolio",
     },
     hero: {
       title: "Hi! I'm Esther Rodrigues",
       intro:
-        "I'm passionate about design and web development, focused on creating digital experiences that combine aesthetics, functionality, and purpose.",
+        "Design and technology under one roof — from the visual to the functional, no middleman needed.",
       highlight:
-        "I work with UI/UX design, front-end development, and visual identity, turning ideas into clear, intuitive, and visually engaging interfaces.",
-      projects: "View Projects",
-      contact: "Download Resume",
+        "Trained in both Internet Systems and Graphic Design, I deliver from brand identity to working systems: UI/UX, front-end, back-end, and visual communication driven by a single, unified vision.",
+      projects: "What I do",
+      contact: "Download resume",
     },
     footer: {
       contact: "Contact",
@@ -102,7 +107,7 @@ export const texts: Record<Language, AppTexts> = {
       projects: "Proyectos",
       curriculo: "Currículum",
       skills: "Habilidades",
-      processo: "Proceso creativo",
+      processo: "Proceso",
       services: "Servicios",
     },
     header: {
@@ -114,11 +119,11 @@ export const texts: Record<Language, AppTexts> = {
     hero: {
       title: "¡Hola! Soy Esther Rodrigues",
       intro:
-        "Me apasiona el diseño y el desarrollo web, con enfoque en crear experiencias digitales que combinan estética, funcionalidad y propósito.",
+        "Diseño y tecnología bajo el mismo techo — de lo visual a lo funcional, sin intermediarios.",
       highlight:
-        "Trabajo con diseño UI/UX, desarrollo front-end e identidad visual, transformando ideas en interfaces claras, intuitivas y visualmente atractivas.",
-      projects: "Ver Proyectos",
-      contact: "Descargar Currículum",
+        "Con formación en Sistemas de Internet y Diseño Gráfico, entrego desde la identidad visual hasta el sistema funcionando: UI/UX, front-end, back-end y comunicación de marca con una visión unificada.",
+      projects: "Qué hago",
+      contact: "Descargar mi currículum",
     },
     footer: {
       contact: "Contacto",
