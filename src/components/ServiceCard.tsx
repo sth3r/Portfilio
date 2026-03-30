@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 
+type Language = "pt" | "en" | "es";
+
 type Service = {
   slug: string;
-  title: Record<string, string>;
-  items: Record<string, string[]>;
+  title: Record<Language, string>;
+  content: Record<Language, string[]>;
 };
 
 type Props = {
@@ -16,7 +18,7 @@ export default function ServiceCard({ service, lang }: Props) {
     <Link to={`/services/${service.slug}`} className="service-card">
       <h3>{service.title[lang]}</h3>
       <ul>
-        {service.items[lang].slice(0, 3).map((item: string) => (
+        {service.content[lang].slice(0, 3).map((item: string) => (
           <li key={item}>{item}</li>
         ))}
       </ul>
