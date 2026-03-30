@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/components/Services.css";
-import { servicesContent } from "../content/servicesTexts";
+// import { servicesContent } from "../content/servicesTexts";
 import Navbar from "../components/Navbar";
-import { useLanguage } from "../context/LanguageContext";
+// import { useLanguage } from "../context/LanguageContext";
 import ServicePackages from "../components/ServicePackages";
 
 const ServicesPage: React.FC = () => {
-  const { language } = useLanguage();
-  const t = servicesContent[language];
+  // const { language } = useLanguage();
+  // const t = servicesContent[language];
 
   return (
     <main className="services-section">
