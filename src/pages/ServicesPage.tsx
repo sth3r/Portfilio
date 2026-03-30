@@ -12,17 +12,17 @@ const ServicesPage: React.FC = () => {
   return (
     <main className="services-section">
       <Navbar />
-
+{/* 
       <header className="services-header">
         <h1>{t.title}</h1>
         <p>{t.description}</p>
-      </header>
+      </header> */}
 
       {/* 1️⃣ Decisão rápida — pacotes em destaque */}
       <ServicePackages />
 
       {/* 2️⃣ Detalhamento completo para quem quer saber mais */}
-      <div className="services-grid">
+      {/* <div className="services-grid">
         {t.groups.map((group) => (
           <article key={group.category} className="service-card">
             <h2>{group.category}</h2>
@@ -33,10 +33,10 @@ const ServicesPage: React.FC = () => {
             </ul>
           </article>
         ))}
-      </div>
+      </div> */}
 
       {/* 3️⃣ CTA depois de ver tudo */}
-      <div className="services-cta">
+      {/* <div className="services-cta">
         <a
           href="https://wa.me/5553984166749"
           target="_blank"
@@ -46,7 +46,7 @@ const ServicesPage: React.FC = () => {
         >
           {t.cta}
         </a>
-      </div>
+      </div> */}
     </main>
   );
 };

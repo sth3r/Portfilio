@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom";
 
-export default function ServiceCard({ service, lang }: any) {
+type Service = {
+  slug: string;
+  title: Record<string, string>;
+  items: Record<string, string[]>;
+};
+
+type Props = {
+  service: Service;
+  lang: "pt" | "en" | "es";
+};
+
+export default function ServiceCard({ service, lang }: Props) {
   return (
     <Link to={`/services/${service.slug}`} className="service-card">
       <h3>{service.title[lang]}</h3>

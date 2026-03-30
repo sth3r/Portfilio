@@ -31,13 +31,34 @@
 }
 
 /* =========================
-   Grid Invisível
+   Subsections
+========================= */
+
+.packages-subsection {
+  margin-bottom: 6rem;
+}
+
+.packages-subsection h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.packages-subsection p {
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 2.5rem;
+}
+
+/* =========================
+   Grid
 ========================= */
 
 .packages-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
 }
 
 /* =========================
@@ -48,13 +69,25 @@
   position: relative;
   padding: 2.5rem 2.2rem;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  transition: transform 0.35s ease, border-color 0.35s ease;
+
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(6px);
+
+  transition: 
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .package-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   border-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
+
+/* =========================
+   Header Card
+========================= */
 
 .package-header {
   margin-bottom: 2rem;
@@ -71,6 +104,7 @@
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0.4rem 0 0.8rem;
+  letter-spacing: -0.01em;
 }
 
 .package-header p {
@@ -118,9 +152,25 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 1px solid #000;
-  padding-bottom: 0.2rem;
   color: #000;
+  position: relative;
+}
+
+.package-cta::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.package-cta:hover::after {
+  transform: scaleX(1);
 }
 
 /* =========================
@@ -128,7 +178,21 @@
 ========================= */
 
 .package-card.highlighted {
-  border-color: #000;
+  border: 1px solid #000;
+  transform: scale(1.02);
+}
+
+.package-card.highlighted::before {
+  content: "Mais escolhido";
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
 }
 
 .package-card.highlighted .package-subtitle {
@@ -142,5 +206,9 @@
 @media (max-width: 768px) {
   .packages-header {
     margin-bottom: 3.5rem;
+  }
+
+  .packages-subsection {
+    margin-bottom: 4rem;
   }
 }
